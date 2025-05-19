@@ -4,22 +4,22 @@ import 'dart:developer';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/stop_watch_controller.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/stop_watch_controller.dart';
 
 class ForegroundController extends GetxController {
-  static const platform = MethodChannel("com.netshift.dnschanger/netdns");
+  static const platform = MethodChannel("com.speednode.dnschanger/netdns");
   RxBool isRunning = false.obs;
   static const EventChannel statusChannel =
-      EventChannel("com.netshift.dnschanger/netdnsStatus");
+      EventChannel("com.speednode.dnschanger/netdnsStatus");
   String foregroundStatus = "none";
   RxString download = "0.00 MB".obs;
   RxString upload = "0.00 MB".obs;
   RxBool serviceStatus = false.obs;
   StreamSubscription? dataUsageSubscription;
   final status = GetStorage();
-  NetshiftEngineController netshiftEngineController =
-      Get.put(NetshiftEngineController());
+  SpeednodeEngineController speednodeEngineController =
+      Get.put(SpeednodeEngineController());
   StopWatchController stopWatchController = Get.put(StopWatchController());
   Future<void> startService(String contextText) async {
     log("Foreground Service Started");
@@ -78,15 +78,15 @@ class ForegroundController extends GetxController {
     serviceStatus.value = await serviceStatusKotlin();
     loadServiceStatus();
     log("****Service Status ananas : ${serviceStatus.value}****");
-    log("****Service Status ananas1 : ${netshiftEngineController.isActive.value}****");
+    log("****Service Status ananas1 : ${speednodeEngineController.isActive.value}****");
   }
 
   void loadServiceStatus() {
-    if (netshiftEngineController.isActive.value && !serviceStatus.value) {
+    if (speednodeEngineController.isActive.value && !serviceStatus.value) {
       log("Sabotaging");
       stopService();
-      netshiftEngineController.isActive.value = false;
-      netshiftEngineController.stopDnsForAndroid();
+      speednodeEngineController.isActive.value = false;
+      speednodeEngineController.stopDnsForAndroid();
       stopWatchController.stopWatchTime();
       stopWatchController.timerBox.write('isRunning', false);
       stopWatchController.elapsedTime.value = Duration.zero;

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:netshift/gen/assets.gen.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/widgets/custom_snack_bar.dart';
+import 'package:speednode/gen/assets.gen.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/widgets/custom_snack_bar.dart';
 
 class CustomTextContainer extends StatelessWidget {
   final String dns;

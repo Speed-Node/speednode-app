@@ -5,13 +5,13 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_ip_address/get_ip_address.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:netshift/controller/blocked_apps_controller.dart';
-import 'package:netshift/models/dns_model.dart';
+import 'package:speednode/controller/blocked_apps_controller.dart';
+import 'package:speednode/models/dns_model.dart';
 
-class NetshiftEngineController extends GetxController {
-  static const platform = MethodChannel("com.netshift.dnschanger/netdns");
+class SpeednodeEngineController extends GetxController {
+  static const platform = MethodChannel("com.speednode.dnschanger/netdns");
   static const EventChannel statusChannel =
-      EventChannel("com.netshift.dnschanger/netdnsStatus");
+      EventChannel("com.speednode.dnschanger/netdnsStatus");
   String dnsStatus = "none";
   GetStorage storage = GetStorage();
   GetStorage interfaceNameStore = GetStorage();
@@ -30,14 +30,14 @@ class NetshiftEngineController extends GetxController {
 
   RxString ipAddressString = "".obs;
 
-  var dnsListNetShift = [].obs;
+  var dnsListSpeedNode = [].obs;
 
   var dnsListPersonal = [].obs;
 
   List<DnsModel> get combinedListDns =>
-      [...dnsListNetShift, ...dnsListPersonal];
+      [...dnsListSpeedNode, ...dnsListPersonal];
   var selectedDns = DnsModel(
-    name: 'NetShift DNS',
+    name: 'SpeedNode DNS',
     primaryDNS: '178.22.122.100',
     secondaryDNS: '78.157.42.100',
   ).obs;
@@ -276,7 +276,7 @@ class NetshiftEngineController extends GetxController {
           if (dnsListPersonal.isNotEmpty) {
             selectedDns.value = dnsListPersonal.first;
           } else if (dnsListPersonal.isEmpty) {
-            selectedDns.value = dnsListNetShift.first;
+            selectedDns.value = dnsListSpeedNode.first;
           }
         }
       }

@@ -2,23 +2,23 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/media_query_size.dart';
-import 'package:netshift/controller/blocked_apps_controller.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/theme_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/screens/blocked_apps_screen.dart';
-import 'package:netshift/core/widgets/app_bar.dart';
-import 'package:netshift/core/widgets/custom_snack_bar.dart';
-import 'package:netshift/core/widgets/other_apps_widgets.dart';
-import 'package:netshift/core/widgets/settings_custom_card.dart';
-import 'package:netshift/core/widgets/support_content.dart';
+import 'package:speednode/core/resources/media_query_size.dart';
+import 'package:speednode/controller/blocked_apps_controller.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/theme_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/screens/blocked_apps_screen.dart';
+import 'package:speednode/core/widgets/app_bar.dart';
+import 'package:speednode/core/widgets/custom_snack_bar.dart';
+import 'package:speednode/core/widgets/other_apps_widgets.dart';
+import 'package:speednode/core/widgets/settings_custom_card.dart';
+import 'package:speednode/core/widgets/support_content.dart';
 
 class SettingsPage extends StatelessWidget {
   SettingsPage({super.key});
   final ThemeController themeController = Get.find();
   final BlockedAppsController blockedAppsController = Get.find();
-  final NetshiftEngineController netshiftEngineController = Get.find();
+  final SpeednodeEngineController speednodeEngineController = Get.find();
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +77,7 @@ class SettingsPage extends StatelessWidget {
                       size: 29,
                     ),
                     onTap: () {
-                      if (!netshiftEngineController.isActive.value) {
+                      if (!speednodeEngineController.isActive.value) {
                         if (blockedAppsController.apps.isEmpty) {
                           blockedAppsController.installedApps();
                         }

@@ -7,20 +7,20 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:netshift/controller/check_for_update_controller.dart';
-import 'package:netshift/controller/dio_config.dart';
-import 'package:netshift/controller/foreground_controller.dart';
-import 'package:netshift/core/services/url_constant.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/main_wrapper.dart';
-import 'package:netshift/models/dns_model.dart';
-import 'package:netshift/core/widgets/check_for_update_widget.dart';
+import 'package:speednode/controller/check_for_update_controller.dart';
+import 'package:speednode/controller/dio_config.dart';
+import 'package:speednode/controller/foreground_controller.dart';
+import 'package:speednode/core/services/url_constant.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/main_wrapper.dart';
+import 'package:speednode/models/dns_model.dart';
+import 'package:speednode/core/widgets/check_for_update_widget.dart';
 
 class SplashScreenController extends GetxController
     with GetSingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation<double> progressController;
-  final NetshiftEngineController netshiftEngineController = Get.find();
+  final SpeednodeEngineController speednodeEngineController = Get.find();
   final CheckForUpdateController checkForUpdateController = Get.find();
   final ForegroundController foregroundController = Get.find();
   RxBool isOnline = true.obs;
@@ -32,7 +32,7 @@ class SplashScreenController extends GetxController
   final ReceivePort receivePort = ReceivePort();
   List<DnsModel> newOfflineDnsList = [
     DnsModel(
-        name: 'NetShift DNS',
+        name: 'SpeedNode DNS',
         primaryDNS: "178.22.122.100",
         secondaryDNS: "78.157.42.100"),
     DnsModel(
@@ -139,7 +139,7 @@ class SplashScreenController extends GetxController
       var response = await dio.get(UrlConstant.baseUrl + UrlConstant.ananas);
       if (response.statusCode == 200) {
         newOnlineDnsList.clear();
-        netshiftEngineController.dnsListNetShift.clear();
+        speednodeEngineController.dnsListSpeedNode.clear();
         var ananas2 = jsonDecode(response.data['data']);
         ananas2['dns_providers'].forEach((json) {
           newOnlineDnsList.add(DnsModel.fromJson(json));
@@ -151,7 +151,7 @@ class SplashScreenController extends GetxController
             return 0;
           },
         );
-        netshiftEngineController.dnsListNetShift.addAll(newOnlineDnsList);
+        speednodeEngineController.dnsListSpeedNode.addAll(newOnlineDnsList);
         await Future.delayed(const Duration(milliseconds: 500));
         if (checkForUpdateController.updateIsAvailable.value) {
           log("Please update the app");
@@ -176,7 +176,7 @@ class SplashScreenController extends GetxController
     saveOnline();
     isOffline.value = true;
     saveOffline();
-    netshiftEngineController.dnsListNetShift.addAll(newOfflineDnsList);
+    speednodeEngineController.dnsListSpeedNode.addAll(newOfflineDnsList);
     await Future.delayed(const Duration(seconds: 2));
     Get.offAll(() => MainWrapper());
   }

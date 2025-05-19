@@ -4,13 +4,13 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:netshift/controller/dio_config.dart';
-import 'package:netshift/core/services/url_constant.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/models/dns_model.dart';
+import 'package:speednode/controller/dio_config.dart';
+import 'package:speednode/core/services/url_constant.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/models/dns_model.dart';
 
 class RandomDnsGeneratorController extends GetxController {
-  final NetshiftEngineController netshiftEngineController = Get.find();
+  final SpeednodeEngineController speednodeEngineController = Get.find();
   var generatedDnsList = <DnsModel>[];
   final Random random = Random();
   RxBool isGenerating = false.obs;
@@ -36,9 +36,9 @@ class RandomDnsGeneratorController extends GetxController {
         //TODO Will add dnsCounter later
         for (var dnsCount = 0; dnsCount < 1; dnsCount++) {
           if (generatedDnsList.isNotEmpty) {
-            netshiftEngineController.dnsListPersonal
+            speednodeEngineController.dnsListPersonal
                 .add(generatedDnsList[random.nextInt(generatedDnsList.length)]);
-            netshiftEngineController.savePersonalDns();
+            speednodeEngineController.savePersonalDns();
             print("DNS Generated successfully");
           } else {
             print("No DNS generated from the API.");

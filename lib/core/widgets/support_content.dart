@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:netshift/gen/assets.gen.dart';
-import 'package:netshift/core/resources/app_colors.dart';
+import 'package:speednode/gen/assets.gen.dart';
+import 'package:speednode/core/resources/app_colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SupportContent extends StatelessWidget {
   const SupportContent({super.key});
 
   Future<void> _launchUrl() async {
-    final Uri url = Uri.https('github.com', '/FarzinNs83/NetShift');
+    final Uri url = Uri.https('github.com', '/FarzinNs83/SpeedNode');
     if (!await launchUrl(url)) {
       throw Exception('Could not launch $url');
     }

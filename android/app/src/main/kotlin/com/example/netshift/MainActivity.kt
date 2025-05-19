@@ -1,4 +1,4 @@
-package com.example.netshift
+package com.example.speednode
 
 import android.content.ComponentName
 import android.content.Intent
@@ -21,15 +21,15 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.Log
-import com.example.netshift.ForegroundService
+import com.example.speednode.ForegroundService
 
 
 class MainActivity : FlutterActivity() {
-    private val vpnStatusChannel = "com.netshift.dnschanger/netdnsStatus"
-    private val vpnControlChannel = "com.netshift.dnschanger/netdns"
-    private val dataUsageChannel = "com.netshift.dnschanger/dataUsage"
-    private val timerChannel = "com.netshift.dnschanger/timer"
-    private val flutterToast = "com.netshift.dnschanger/toast"
+    private val vpnStatusChannel = "com.speednode.dnschanger/netdnsStatus"
+    private val vpnControlChannel = "com.speednode.dnschanger/netdns"
+    private val dataUsageChannel = "com.speednode.dnschanger/dataUsage"
+    private val timerChannel = "com.speednode.dnschanger/timer"
+    private val flutterToast = "com.speednode.dnschanger/toast"
     companion object {
 
 
@@ -38,7 +38,7 @@ class MainActivity : FlutterActivity() {
     private var eventSink: EventChannel.EventSink? = null
     private val REQUEST_CODE_NOTIF = 1001
 
-    private var vpnService: NetShiftService? = null
+    private var vpnService: SpeedNodeService? = null
     private var isBound = false
     private val defaultDns1 = "78.157.42.100"
     private val defaultDns2 = "78.157.42.101"
@@ -50,7 +50,7 @@ class MainActivity : FlutterActivity() {
 
     private val connection = object : ServiceConnection {
         override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
-            val binder = service as NetShiftService.LocalBinder
+            val binder = service as SpeedNodeService.LocalBinder
             vpnService = binder.getService()
             vpnService?.setStatusListener { status ->
                 eventSink?.success(status)
@@ -81,14 +81,14 @@ class MainActivity : FlutterActivity() {
                     initialDownloadBytes = TrafficStats.getTotalRxBytes()
                     initialUploadBytes = TrafficStats.getTotalTxBytes()
                     isServiceRunning = true
-                    result.success("NetShift started with DNS: $dns1, $dns2")
+                    result.success("SpeedNode started with DNS: $dns1, $dns2")
                 }
                 "stopDns" -> {
                     vpnService?.stopDns()
                     initialDownloadBytes = 0
                     initialUploadBytes = 0
                     isServiceRunning = false
-                    result.success("NetShift stopped")
+                    result.success("SpeedNode stopped")
                 }
                 "startService" -> {
                     val contentText = call.argument<String>("contentText") ?: "Foreground Service Running"
@@ -134,9 +134,9 @@ class MainActivity : FlutterActivity() {
         val intent = VpnService.prepare(this)
         if (intent != null) {
             startActivityForResult(intent, 0)
-            result.success("NetShift preparation started")
+            result.success("SpeedNode preparation started")
         } else {
-            result.success("NetShift already prepared")
+            result.success("SpeedNode already prepared")
         }
     }
     override fun onPause() {
@@ -150,15 +150,15 @@ class MainActivity : FlutterActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 0) {
             if (resultCode == RESULT_OK) {
-                Toast.makeText(this, "NetShift permission granted", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "SpeedNode permission granted", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "NetShift permission denied", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "SpeedNode permission denied", Toast.LENGTH_SHORT).show()
             }
         }
     }
 
     private fun bindVpnService() {
-        val intent = Intent(this, NetShiftService::class.java)
+        val intent = Intent(this, SpeedNodeService::class.java)
         bindService(intent, connection, BIND_AUTO_CREATE)
     }
 

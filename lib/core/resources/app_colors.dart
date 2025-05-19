@@ -178,27 +178,27 @@ class AppColors {
   static Color get mainDnsSelectorSheetColor =>
       isDarkMode ? Colors.transparent : Colors.transparent;
 
-  static Color get dnsSelectionContainerNetShiftBackground => isDarkMode
+  static Color get dnsSelectionContainerSpeedNodeBackground => isDarkMode
       ? const Color(0xFF1E2025)
       : const Color.fromARGB(255, 231, 218, 250);
 
-  static Color get dnsSelectionContainerNetShiftAppBarText =>
+  static Color get dnsSelectionContainerSpeedNodeAppBarText =>
       isDarkMode ? Colors.white : Colors.indigo;
 
-  static Color get dnsSelectionContainerNetShiftCloseIcon =>
+  static Color get dnsSelectionContainerSpeedNodeCloseIcon =>
       isDarkMode ? Colors.white : Colors.indigo;
 
-  static Color get dnsSelectionContainerNetShiftContainer => isDarkMode
+  static Color get dnsSelectionContainerSpeedNodeContainer => isDarkMode
       ? const Color(0xFF292B33)
       : const Color(0xFFB39DDB).withValues(alpha: 0.4);
 
-  static Color get dnsSelectionContainerNetShiftBorderContainer =>
+  static Color get dnsSelectionContainerSpeedNodeBorderContainer =>
       isDarkMode ? const Color(0xFF16725C) : Colors.indigo;
 
-  static Color get dnsSelectionContainerNetShiftDnsName =>
+  static Color get dnsSelectionContainerSpeedNodeDnsName =>
       isDarkMode ? Colors.white : Colors.indigo;
 
-  static Color get dnsSelectionContainerNetShiftDns =>
+  static Color get dnsSelectionContainerSpeedNodeDns =>
       isDarkMode ? Colors.grey : const Color.fromARGB(180, 63, 81, 181);
 
   static Color get dnsSelectorSheetPersonal => isDarkMode

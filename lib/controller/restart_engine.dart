@@ -1,54 +1,54 @@
 import 'dart:developer';
 
 import 'package:get/get.dart';
-import 'package:netshift/controller/foreground_controller.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/single_dns_ping_controller.dart';
-import 'package:netshift/controller/stop_watch_controller.dart';
-import 'package:netshift/core/services/windows_local_notif.dart';
-import 'package:netshift/core/widgets/flutter_toast.dart';
+import 'package:speednode/controller/foreground_controller.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/single_dns_ping_controller.dart';
+import 'package:speednode/controller/stop_watch_controller.dart';
+import 'package:speednode/core/services/windows_local_notif.dart';
+import 'package:speednode/core/widgets/flutter_toast.dart';
 
 class RestartEngine extends GetxController {
     final dnsPingController = Get.find<SingleDnsPingController>();
-        final NetshiftEngineController netshiftEngineController = Get.find();
+        final SpeednodeEngineController speednodeEngineController = Get.find();
   final StopWatchController stopWatchController = Get.find();
   final ForegroundController foregroundController = Get.find();
 
   void restartEngineAndroid() async {
     log('Ananas1');
 
-    await netshiftEngineController.stopDnsForAndroid();
+    await speednodeEngineController.stopDnsForAndroid();
     await foregroundController.stopService();
     stopWatchController.stopWatchTime();
 
-    await netshiftEngineController.startDnsForAndroid();
+    await speednodeEngineController.startDnsForAndroid();
     await foregroundController
-        .startService(netshiftEngineController.selectedDns.value.name);
+        .startService(speednodeEngineController.selectedDns.value.name);
     stopWatchController.startWatchTime();
 
     FlutterToast(message: "Service Restarted Successfully").flutterToast();
   }
 
   void startEngineAndroid() {
-    netshiftEngineController.startDnsForAndroid();
+    speednodeEngineController.startDnsForAndroid();
     foregroundController
-        .startService(netshiftEngineController.selectedDns.value.name);
+        .startService(speednodeEngineController.selectedDns.value.name);
     stopWatchController.startWatchTime();
-    netshiftEngineController.isActive.value = true;
+    speednodeEngineController.isActive.value = true;
     FlutterToast(message: "Service Started Successfully").flutterToast();
   }
 
   void restartEngineWindows() async {
-    await netshiftEngineController.stopDnsForWindows();
+    await speednodeEngineController.stopDnsForWindows();
     stopWatchController.stopWatchTime();
-    await netshiftEngineController.startDnsForWindows();
+    await speednodeEngineController.startDnsForWindows();
     stopWatchController.startWatchTime();
-    WindowsLocalNotif(body: "Service Restarted Successfully", title: "NetShift");
+    WindowsLocalNotif(body: "Service Restarted Successfully", title: "SpeedNode");
   }
 
   void startEngineWindows() {
-    netshiftEngineController.startDnsForWindows();
+    speednodeEngineController.startDnsForWindows();
     stopWatchController.startWatchTime();
-    WindowsLocalNotif(body: "Service Started Successfully", title: "NetShift");
+    WindowsLocalNotif(body: "Service Started Successfully", title: "SpeedNode");
   }
 }

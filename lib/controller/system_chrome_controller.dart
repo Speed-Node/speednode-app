@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:netshift/controller/theme_controller.dart';
+import 'package:speednode/controller/theme_controller.dart';
 
 class SystemChromeController {
   final ThemeController themeController = Get.put(ThemeController());

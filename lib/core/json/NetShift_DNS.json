@@ -1,7 +1,7 @@
 {
     "dns_providers": [
       {
-        "name": "NetShift DNS",
+        "name": "SpeedNode DNS",
         "primaryDNS": "178.22.122.100",
         "secondaryDNS": "78.157.42.100"
       },

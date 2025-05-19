@@ -4,20 +4,20 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/media_query_size.dart';
-import 'package:netshift/controller/foreground_controller.dart';
-import 'package:netshift/controller/glow_controller.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/stop_watch_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/services/windows_local_notif.dart';
-import 'package:netshift/core/widgets/custom_snack_bar.dart';
-import 'package:netshift/core/widgets/flutter_toast.dart';
+import 'package:speednode/core/resources/media_query_size.dart';
+import 'package:speednode/controller/foreground_controller.dart';
+import 'package:speednode/controller/glow_controller.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/stop_watch_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/services/windows_local_notif.dart';
+import 'package:speednode/core/widgets/custom_snack_bar.dart';
+import 'package:speednode/core/widgets/flutter_toast.dart';
 
 class ConnectButton extends StatelessWidget {
   ConnectButton({super.key});
-  final NetshiftEngineController netshiftEngineController =
-      Get.put(NetshiftEngineController());
+  final SpeednodeEngineController speednodeEngineController =
+      Get.put(SpeednodeEngineController());
   final ForegroundController foregroundController =
       Get.put(ForegroundController());
   final StopWatchController stopWatchController =
@@ -27,21 +27,21 @@ class ConnectButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(
       () {
-        bool isOn = netshiftEngineController.isActive.value;
-        bool isLoading = netshiftEngineController.isLoading.value;
+        bool isOn = speednodeEngineController.isActive.value;
+        bool isLoading = speednodeEngineController.isLoading.value;
         bool isPermissionGranted =
-            netshiftEngineController.isPermissionGiven.value;
+            speednodeEngineController.isPermissionGiven.value;
 
         return GestureDetector(
           onTap: isLoading
               ? null
               : () {
                   if (Platform.isAndroid && !isPermissionGranted) {
-                    netshiftEngineController.prepareDns();
+                    speednodeEngineController.prepareDns();
                     return;
                   }
                   if (Platform.isWindows &&
-                      netshiftEngineController.interfaceName.value
+                      speednodeEngineController.interfaceName.value
                           .contains('Select Interface')) {
                     CustomSnackBar(
                       title: "Operation Failed",
@@ -56,7 +56,7 @@ class ConnectButton extends StatelessWidget {
                   }
                   if (Platform.isAndroid && isPermissionGranted && isOn) {
                     // FOR ANDROID
-                    netshiftEngineController.stopDnsForAndroid();
+                    speednodeEngineController.stopDnsForAndroid();
                     foregroundController.stopService();
                     stopWatchController.stopWatchTime();
                     FlutterToast(message: "Service Stopped Successfully")
@@ -65,9 +65,9 @@ class ConnectButton extends StatelessWidget {
                       isPermissionGranted &&
                       !isOn) {
                     // FOR ANDROID
-                    netshiftEngineController.startDnsForAndroid();
+                    speednodeEngineController.startDnsForAndroid();
                     foregroundController.startService(
-                        netshiftEngineController.selectedDns.value.name);
+                        speednodeEngineController.selectedDns.value.name);
                     stopWatchController.startWatchTime();
                     FlutterToast(message: "Service Started Successfully")
                         .flutterToast();
@@ -75,20 +75,20 @@ class ConnectButton extends StatelessWidget {
                     log("Premission not granted!");
                   } else if (Platform.isWindows && isOn) {
                     // FOR WINDOWS
-                    netshiftEngineController.stopDnsForWindows();
+                    speednodeEngineController.stopDnsForWindows();
                     stopWatchController.stopWatchTime();
                     WindowsLocalNotif(
                       body:
-                          "NetShift has disconnected from the ${netshiftEngineController.selectedDns.value.name}.",
+                          "SpeedNode has disconnected from the ${speednodeEngineController.selectedDns.value.name}.",
                       title: "Service Stopped",
                     ).showNotification();
                   } else if (Platform.isWindows && !isOn) {
                     // FOR WINDOWS
-                    netshiftEngineController.startDnsForWindows();
+                    speednodeEngineController.startDnsForWindows();
                     stopWatchController.startWatchTime();
                     WindowsLocalNotif(
                       body:
-                          "NetShift has successfully connected to the ${netshiftEngineController.selectedDns.value.name}.",
+                          "SpeedNode has successfully connected to the ${speednodeEngineController.selectedDns.value.name}.",
                       title: "Service Started",
                     ).showNotification();
                   }

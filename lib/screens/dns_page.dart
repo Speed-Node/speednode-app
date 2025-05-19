@@ -1,29 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/extention_sized.dart';
-import 'package:netshift/core/resources/media_query_size.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/random_dns_generator_controller.dart';
-import 'package:netshift/controller/single_dns_ping_controller.dart';
-import 'package:netshift/controller/splash_controller.dart';
-import 'package:netshift/gen/assets.gen.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/widgets/add_dns.dart';
-import 'package:netshift/core/widgets/app_bar.dart';
-import 'package:netshift/core/widgets/custom_floating_action_button.dart';
-import 'package:netshift/core/widgets/custom_textfield.dart';
-import 'package:netshift/core/widgets/dns_generator_dialog.dart';
-import 'package:netshift/core/widgets/dns_selection_container.dart';
-import 'package:netshift/core/widgets/custom_button.dart';
-import 'package:netshift/core/widgets/main_dns_selector.dart';
-import 'package:netshift/core/widgets/custom_snack_bar.dart';
-import 'package:netshift/core/widgets/world_map.dart';
+import 'package:speednode/core/resources/extention_sized.dart';
+import 'package:speednode/core/resources/media_query_size.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/random_dns_generator_controller.dart';
+import 'package:speednode/controller/single_dns_ping_controller.dart';
+import 'package:speednode/controller/splash_controller.dart';
+import 'package:speednode/gen/assets.gen.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/widgets/add_dns.dart';
+import 'package:speednode/core/widgets/app_bar.dart';
+import 'package:speednode/core/widgets/custom_floating_action_button.dart';
+import 'package:speednode/core/widgets/custom_textfield.dart';
+import 'package:speednode/core/widgets/dns_generator_dialog.dart';
+import 'package:speednode/core/widgets/dns_selection_container.dart';
+import 'package:speednode/core/widgets/custom_button.dart';
+import 'package:speednode/core/widgets/main_dns_selector.dart';
+import 'package:speednode/core/widgets/custom_snack_bar.dart';
+import 'package:speednode/core/widgets/world_map.dart';
 
 class DNSPage extends StatelessWidget {
   DNSPage({super.key});
 
-  final NetshiftEngineController netshiftEngineController = Get.find();
+  final SpeednodeEngineController speednodeEngineController = Get.find();
   final splashScreenController = Get.find<SplashScreenController>();
   // final sortedDnsPingController = Get.put(SortedDnsPingController());
   @override
@@ -57,7 +57,7 @@ class DNSPage extends StatelessWidget {
                     SizedBox(height: ScreenSize.height * 0.02),
                     DnsSelectionContainer(
                       onPressed: () {
-                        if (netshiftEngineController.isActive.value) {
+                        if (speednodeEngineController.isActive.value) {
                           CustomSnackBar(
                             title: "Operation Failed",
                             message:
@@ -118,7 +118,7 @@ class DNSPage extends StatelessWidget {
                     8.height,
                     CustomTextContainer(
                       dns:
-                          netshiftEngineController.selectedDns.value.primaryDNS,
+                          speednodeEngineController.selectedDns.value.primaryDNS,
                     ),
                     SizedBox(height: ScreenSize.height * 0.02),
                     Row(
@@ -151,7 +151,7 @@ class DNSPage extends StatelessWidget {
                     ),
                     8.height,
                     CustomTextContainer(
-                      dns: netshiftEngineController
+                      dns: speednodeEngineController
                           .selectedDns.value.secondaryDNS,
                     ),
                     SizedBox(height: ScreenSize.height * 0.03),
@@ -203,7 +203,7 @@ class DNSPage extends StatelessWidget {
                           CustomFloatingActionButton(
                             path: Assets.svg.addDns,
                             onTap: () {
-                              if (netshiftEngineController.isActive.value) {
+                              if (speednodeEngineController.isActive.value) {
                                 CustomSnackBar(
                                   title: "Operation Failed",
                                   message:

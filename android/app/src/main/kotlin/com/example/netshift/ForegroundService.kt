@@ -1,4 +1,4 @@
-package com.example.netshift
+package com.example.speednode
 
 import android.app.*
 import android.content.Context
@@ -10,7 +10,7 @@ import androidx.core.app.NotificationCompat
 import android.net.TrafficStats
 import android.widget.Toast
 import io.flutter.Log
-import com.example.netshift.R
+import com.example.speednode.R
 
 
 class ForegroundService : Service() {
@@ -54,7 +54,7 @@ class ForegroundService : Service() {
         when (intent?.action) {
             "STOP_DNS" -> {
 //                isRunning = false
-                Log.d("NetShift Service","Stopped from notification")
+                Log.d("SpeedNode Service","Stopped from notification")
                 stopVpnService()
                 stopSelf()
                 setServiceStatus(false)
@@ -63,7 +63,7 @@ class ForegroundService : Service() {
             }
             else -> {
                 if (!isRunning) {
-                    Log.d("NetShift Service","Started from notification")
+                    Log.d("SpeedNode Service","Started from notification")
                     val contentText = intent?.getStringExtra("contentText") ?: "Foreground Service Running"
                     isRunning = true
                     setServiceStatus(true)
@@ -150,8 +150,8 @@ class ForegroundService : Service() {
     private fun startForegroundService(contentText: String) {
         downloadMB = 0.0
         uploadMB = 0.0
-        val channelId = "NetShift Service"
-        val channelName = "NetShift Service"
+        val channelId = "SpeedNode Service"
+        val channelName = "SpeedNode Service"
     
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
@@ -203,9 +203,9 @@ class ForegroundService : Service() {
     }
 
     private fun stopVpnService() {
-        Log.d("NetShiftService", "stopVpnService called")
-        val stopVpnIntent = Intent(this, NetShiftService::class.java).apply {
-            action = NetShiftService.ACTION_STOP_DNS
+        Log.d("SpeedNodeService", "stopVpnService called")
+        val stopVpnIntent = Intent(this, SpeedNodeService::class.java).apply {
+            action = SpeedNodeService.ACTION_STOP_DNS
         }
         startService(stopVpnIntent)
         stopService(stopVpnIntent)
@@ -225,7 +225,7 @@ class ForegroundService : Service() {
 
     override fun onBind(intent: Intent?): IBinder? = null
     fun getServiceStatus(): Boolean {
-        val sharedPreferences = getSharedPreferences("NetShiftPrefs", Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("SpeedNodePrefs", Context.MODE_PRIVATE)
         val status = sharedPreferences.getBoolean("service_running", false)
         Log.d("ForegroundService", "Loaded service status: $status")
         isServiceRunning = status
@@ -233,7 +233,7 @@ class ForegroundService : Service() {
     }
 
     private fun setServiceStatus(isRunning: Boolean) {
-        val sharedPreferences = getSharedPreferences("NetShiftPrefs", Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("SpeedNodePrefs", Context.MODE_PRIVATE)
         sharedPreferences.edit().putBoolean("service_running", isRunning).apply()
         Log.d("ForegroundService", "Saved service status: $isRunning")
     }

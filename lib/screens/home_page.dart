@@ -4,26 +4,26 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/extention_sized.dart';
-import 'package:netshift/controller/foreground_controller.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/splash_controller.dart';
-import 'package:netshift/controller/stop_watch_controller.dart';
-import 'package:netshift/gen/assets.gen.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/screens/splash_screen.dart';
-import 'package:netshift/core/services/windows_local_notif.dart';
-import 'package:netshift/core/widgets/app_bar.dart';
-import 'package:netshift/core/widgets/connect_button.dart';
-import 'package:netshift/core/widgets/custom_snack_bar.dart';
-import 'package:netshift/core/widgets/dns_status.dart';
-import 'package:netshift/core/widgets/flutter_toast.dart';
-import 'package:netshift/core/widgets/status_bar.dart';
-import 'package:netshift/core/widgets/world_map.dart';
+import 'package:speednode/core/resources/extention_sized.dart';
+import 'package:speednode/controller/foreground_controller.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/splash_controller.dart';
+import 'package:speednode/controller/stop_watch_controller.dart';
+import 'package:speednode/gen/assets.gen.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/screens/splash_screen.dart';
+import 'package:speednode/core/services/windows_local_notif.dart';
+import 'package:speednode/core/widgets/app_bar.dart';
+import 'package:speednode/core/widgets/connect_button.dart';
+import 'package:speednode/core/widgets/custom_snack_bar.dart';
+import 'package:speednode/core/widgets/dns_status.dart';
+import 'package:speednode/core/widgets/flutter_toast.dart';
+import 'package:speednode/core/widgets/status_bar.dart';
+import 'package:speednode/core/widgets/world_map.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
-  final NetshiftEngineController netshiftEngineController = Get.find();
+  final SpeednodeEngineController speednodeEngineController = Get.find();
   final StopWatchController stopWatchController = Get.find();
   final ForegroundController foregroundController = Get.find();
   final SplashScreenController splashController = Get.find();
@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: CustomAppBar(
-        title: "NetShift",
+        title: "SpeedNode",
         fontFamily: 'Calistoga',
         fontSize: 24,
         fontWeight: FontWeight.w600,
@@ -92,7 +92,7 @@ class HomePage extends StatelessWidget {
                                 if (Platform.isWindows) {
                                   WindowsLocalNotif(
                                     body: "Starting in Online Mode",
-                                    title: "NetShift Service",
+                                    title: "SpeedNode Service",
                                   ).showNotification();
                                 } else if (Platform.isAndroid) {
                                   FlutterToast(
@@ -142,12 +142,12 @@ class HomePage extends StatelessWidget {
                           : StatusIcon(
                               path: Assets.svg.flush,
                               label: 'Flush DNS',
-                              status: netshiftEngineController.isFlushing.value
+                              status: speednodeEngineController.isFlushing.value
                                   ? "Flushed Succesfully"
                                   : "Tap To Flush",
                               color: AppColors.download,
                               onTap: () {
-                                if (netshiftEngineController.isActive.value) {
+                                if (speednodeEngineController.isActive.value) {
                                   CustomSnackBar(
                                     title: "Operation Failed",
                                     message:
@@ -159,7 +159,7 @@ class HomePage extends StatelessWidget {
                                     textColor: Colors.white,
                                   ).customSnackBar();
                                 } else {
-                                  netshiftEngineController.flushDnsForWindows();
+                                  speednodeEngineController.flushDnsForWindows();
                                   CustomSnackBar(
                                     title: "Operation Success",
                                     message: "FLUSHED DNS Succesfully",
@@ -176,11 +176,11 @@ class HomePage extends StatelessWidget {
                       StatusIcon(
                         path: Assets.svg.global,
                         label: 'Address',
-                        status: netshiftEngineController.isIpAddress.value
+                        status: speednodeEngineController.isIpAddress.value
                             ? "IP: Getting IP..."
-                            : "IP: ${netshiftEngineController.ipAddressString}",
+                            : "IP: ${speednodeEngineController.ipAddressString}",
                         color: AppColors.ip,
-                        onTap: () => netshiftEngineController.getIpAddress(),
+                        onTap: () => speednodeEngineController.getIpAddress(),
                         iconColor: const Color(0xFF428BC1),
                       ),
                       Platform.isAndroid
@@ -196,10 +196,10 @@ class HomePage extends StatelessWidget {
                               path: Assets.svg.interface,
                               label: 'Interface',
                               status:
-                                  "${netshiftEngineController.interfaceName.value} ⏷",
+                                  "${speednodeEngineController.interfaceName.value} ⏷",
                               color: AppColors.upload,
                               onTap: () {
-                                if (netshiftEngineController.isActive.value) {
+                                if (speednodeEngineController.isActive.value) {
                                   CustomSnackBar(
                                     title: "Operation Failed",
                                     message:
@@ -239,7 +239,7 @@ class HomePage extends StatelessWidget {
                                               Expanded(
                                                 child: ListView.builder(
                                                   itemCount:
-                                                      netshiftEngineController
+                                                      speednodeEngineController
                                                           .interfaceKeys.length,
                                                   scrollDirection:
                                                       Axis.vertical,
@@ -247,7 +247,7 @@ class HomePage extends StatelessWidget {
                                                       (context, index) {
                                                     return ListTile(
                                                       title: Text(
-                                                        netshiftEngineController
+                                                        speednodeEngineController
                                                                 .interfaceKeys[
                                                             index],
                                                         style: TextStyle(
@@ -257,19 +257,19 @@ class HomePage extends StatelessWidget {
                                                         ),
                                                       ),
                                                       onTap: () {
-                                                        netshiftEngineController
+                                                        speednodeEngineController
                                                                 .interfaceName
                                                                 .value =
-                                                            netshiftEngineController
+                                                            speednodeEngineController
                                                                     .interfaceKeys[
                                                                 index];
-                                                        netshiftEngineController
+                                                        speednodeEngineController
                                                             .saveInterfaceName();
-                                                        log("Interface changed to ${netshiftEngineController.interfaceName.value}");
+                                                        log("Interface changed to ${speednodeEngineController.interfaceName.value}");
                                                         Navigator.pop(context);
                                                       },
                                                       leading:
-                                                          netshiftEngineController
+                                                          speednodeEngineController
                                                                           .interfaceValues[
                                                                       index] ==
                                                                   'Connected'

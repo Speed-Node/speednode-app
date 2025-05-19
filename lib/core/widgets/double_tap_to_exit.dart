@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:netshift/core/widgets/flutter_toast.dart';
+import 'package:speednode/core/widgets/flutter_toast.dart';
 
 class DoubleTapToExit extends StatefulWidget {
   final Widget child;

@@ -1,4 +1,4 @@
-package com.example.netshift
+package com.example.speednode
 
 import android.app.Service
 import android.content.Intent
@@ -11,7 +11,7 @@ import android.os.ParcelFileDescriptor
 import android.util.Log
 import android.service.quicksettings.Tile
 
-class NetShiftService : VpnService() {
+class SpeedNodeService : VpnService() {
 
     private var vpnInterface: ParcelFileDescriptor? = null
     private val binder = LocalBinder()
@@ -26,7 +26,7 @@ class NetShiftService : VpnService() {
     private var dnsServers: List<String> = listOf("78.157.42.100", "78.157.42.101")
 
     inner class LocalBinder : Binder() {
-        fun getService(): NetShiftService = this@NetShiftService
+        fun getService(): SpeedNodeService = this@SpeedNodeService
     }
 
     override fun onBind(intent: Intent?): IBinder {
@@ -41,7 +41,7 @@ class NetShiftService : VpnService() {
             startDns(disallowedApps)
             }
             ACTION_STOP_DNS -> {
-                Log.d("NetShiftService", "Stopping DNS")
+                Log.d("SpeedNodeService", "Stopping DNS")
                 stopDns()
             }
         }
@@ -50,7 +50,7 @@ class NetShiftService : VpnService() {
 
     fun setDnsServers(dnsList: List<String>) {
         dnsServers = dnsList
-        Log.d("NetShiftService", "DNS servers updated: $dnsServers")
+        Log.d("SpeedNodeService", "DNS servers updated: $dnsServers")
     }
 
     
@@ -65,25 +65,25 @@ class NetShiftService : VpnService() {
     fun startDns(disallowedApps: List<String>) {
         if (!isRunning) {
             val builder = Builder()
-            builder.setSession("NetShiftDNS")
+            builder.setSession("SpeedNodeDNS")
                 .addAddress("10.0.0.2", 24)
     
         if (dnsServers.isNotEmpty()) {
             builder.addDnsServer(dnsServers[0])
-            Log.d("NetShiftService", "Primary DNS set: ${dnsServers[0]}")
+            Log.d("SpeedNodeService", "Primary DNS set: ${dnsServers[0]}")
         }
 
         if (dnsServers.size > 1) {
             builder.addDnsServer(dnsServers[1])
-            Log.d("NetShiftService", "Secondary DNS set: ${dnsServers[1]}")
+            Log.d("SpeedNodeService", "Secondary DNS set: ${dnsServers[1]}")
         }
     
             for (app in disallowedApps) {
                 try {
                     builder.addDisallowedApplication(app)
-                    Log.d("NetShiftService", "NetShift started with disallowed app: $app")
+                    Log.d("SpeedNodeService", "SpeedNode started with disallowed app: $app")
                 } catch (e: Exception) {
-                    Log.e("NetShiftService", "Error adding disallowed application: $app, ${e.message}")
+                    Log.e("SpeedNodeService", "Error adding disallowed application: $app, ${e.message}")
                 }
             }
     
@@ -91,7 +91,7 @@ class NetShiftService : VpnService() {
             vpnInterface = builder.establish()
             isRunning = true
             updateStatus("VPN_STARTED")
-            Log.d("NetShiftService", "NetShift started with DNS: $dnsServers")
+            Log.d("SpeedNodeService", "SpeedNode started with DNS: $dnsServers")
         }
     }
     
@@ -102,7 +102,7 @@ class NetShiftService : VpnService() {
         isRunning = false
         updateStatus("DNS_STOPPED") 
         
-        Log.d("NetShiftService", "DNS disconnected")
+        Log.d("SpeedNodeService", "DNS disconnected")
     }
 
 

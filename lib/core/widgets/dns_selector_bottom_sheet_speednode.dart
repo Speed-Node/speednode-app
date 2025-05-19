@@ -1,16 +1,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/single_dns_ping_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/widgets/dis.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/single_dns_ping_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/widgets/dis.dart';
 
-class DNSSelectorBottomSheetNetShift extends StatelessWidget {
-  DNSSelectorBottomSheetNetShift({
+class DNSSelectorBottomSheetSpeedNode extends StatelessWidget {
+  DNSSelectorBottomSheetSpeedNode({
     super.key,
   });
-final NetshiftEngineController netshiftEngineController = Get.find();
+final SpeednodeEngineController speednodeEngineController = Get.find();
 final SingleDnsPingController dnsPingController = Get.find();
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ final SingleDnsPingController dnsPingController = Get.find();
         builder: (BuildContext context, ScrollController scrollController) {
           return Container(
             decoration: BoxDecoration(
-              color: AppColors.dnsSelectionContainerNetShiftBackground,
+              color: AppColors.dnsSelectionContainerSpeedNodeBackground,
               borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(24),
               ),
@@ -39,7 +39,7 @@ final SingleDnsPingController dnsPingController = Get.find();
                         'Select DNS',
                         style: TextStyle(
                           color:
-                              AppColors.dnsSelectionContainerNetShiftAppBarText,
+                              AppColors.dnsSelectionContainerSpeedNodeAppBarText,
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
@@ -49,7 +49,7 @@ final SingleDnsPingController dnsPingController = Get.find();
                         icon: Icon(
                           Icons.close,
                           color:
-                              AppColors.dnsSelectionContainerNetShiftCloseIcon,
+                              AppColors.dnsSelectionContainerSpeedNodeCloseIcon,
                         ),
                       ),
                     ],
@@ -58,10 +58,10 @@ final SingleDnsPingController dnsPingController = Get.find();
                 Expanded(
                   child: ListView.builder(
                     controller: scrollController,
-                    itemCount: netshiftEngineController.dnsListNetShift.length,
+                    itemCount: speednodeEngineController.dnsListSpeedNode.length,
                     itemBuilder: (context, index) {
                       final dns =
-                          netshiftEngineController.dnsListNetShift[index];
+                          speednodeEngineController.dnsListSpeedNode[index];
                       return Padding(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16.0,
@@ -69,21 +69,21 @@ final SingleDnsPingController dnsPingController = Get.find();
                         ),
                         child: GestureDetector(
                           onTap: () {
-                            netshiftEngineController.selectedDns.value = dns;
+                            speednodeEngineController.selectedDns.value = dns;
                             dnsPingController.pingPrimaryDns();
                             dnsPingController.pingSecondaryDns();
-                            netshiftEngineController.saveSelectedDnsValue();
+                            speednodeEngineController.saveSelectedDnsValue();
                             Navigator.pop(context);
                           },
                           child: Container(
                             padding: const EdgeInsets.all(16.0),
                             decoration: BoxDecoration(
                               color: AppColors
-                                  .dnsSelectionContainerNetShiftContainer,
+                                  .dnsSelectionContainerSpeedNodeContainer,
                               borderRadius: BorderRadius.circular(16),
                               border: Border.all(
                                 color: AppColors
-                                    .dnsSelectionContainerNetShiftBorderContainer,
+                                    .dnsSelectionContainerSpeedNodeBorderContainer,
                                 width: 2,
                               ),
                             ),
@@ -94,36 +94,36 @@ final SingleDnsPingController dnsPingController = Get.find();
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      netshiftEngineController
-                                          .dnsListNetShift[index].name,
+                                      speednodeEngineController
+                                          .dnsListSpeedNode[index].name,
                                       style: TextStyle(
                                         color: AppColors
-                                            .dnsSelectionContainerNetShiftDnsName,
+                                            .dnsSelectionContainerSpeedNodeDnsName,
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                     const SizedBox(height: 4),
                                     Text(
-                                      "Primary: ${netshiftEngineController.dnsListNetShift[index].primaryDNS}",
+                                      "Primary: ${speednodeEngineController.dnsListSpeedNode[index].primaryDNS}",
                                       style: TextStyle(
                                         color: AppColors
-                                            .dnsSelectionContainerNetShiftDns,
+                                            .dnsSelectionContainerSpeedNodeDns,
                                         fontSize: 14,
                                       ),
                                     ),
                                     Text(
-                                      'Secondary: ${netshiftEngineController.dnsListNetShift[index].secondaryDNS}',
+                                      'Secondary: ${speednodeEngineController.dnsListSpeedNode[index].secondaryDNS}',
                                       style: TextStyle(
                                         color: AppColors
-                                            .dnsSelectionContainerNetShiftDns,
+                                            .dnsSelectionContainerSpeedNodeDns,
                                         fontSize: 14,
                                       ),
                                     ),
                                   ],
                                 ),
-                                netshiftEngineController
-                                        .dnsListNetShift[index].name
+                                speednodeEngineController
+                                        .dnsListSpeedNode[index].name
                                         .contains('*')
                                     ? const Icon(
                                         Icons.remove_circle,

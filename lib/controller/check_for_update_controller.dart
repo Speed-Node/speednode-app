@@ -2,8 +2,8 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:netshift/controller/dio_config.dart';
-import 'package:netshift/core/services/url_constant.dart';
+import 'package:speednode/controller/dio_config.dart';
+import 'package:speednode/core/services/url_constant.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class CheckForUpdateController extends GetxController {

@@ -80,8 +80,8 @@ class $AssetsSvgGen {
   /// File path: assets/svg/interface.svg
   String get interface => 'assets/svg/interface.svg';
 
-  /// File path: assets/svg/netshift.svg
-  String get netshift => 'assets/svg/netshift.svg';
+  /// File path: assets/svg/speednode.svg
+  String get speednode => 'assets/svg/speednode.svg';
 
   /// File path: assets/svg/paint.svg
   String get paint => 'assets/svg/paint.svg';
@@ -121,7 +121,7 @@ class $AssetsSvgGen {
     global,
     home,
     interface,
-    netshift,
+    speednode,
     paint,
     ping,
     settings,

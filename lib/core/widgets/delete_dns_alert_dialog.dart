@@ -1,18 +1,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/single_dns_ping_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/single_dns_ping_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
 
 class DeleteDNSAlertDialog extends StatelessWidget {
   DeleteDNSAlertDialog({
     super.key,
-    required this.netshiftEngineController,
+    required this.speednodeEngineController,
     required this.dns,
   });
 
-  final NetshiftEngineController netshiftEngineController;
+  final SpeednodeEngineController speednodeEngineController;
   final dynamic dns;
   final SingleDnsPingController dnsPingController =
       Get.put(SingleDnsPingController());
@@ -84,11 +84,11 @@ class DeleteDNSAlertDialog extends StatelessWidget {
           ),
           onPressed: () {
             Navigator.of(context).pop();
-            netshiftEngineController.deleteDns(dns);
+            speednodeEngineController.deleteDns(dns);
 
             dnsPingController.pingPrimaryDns();
             dnsPingController.pingSecondaryDns();
-            netshiftEngineController.savePersonalDns();
+            speednodeEngineController.savePersonalDns();
           },
           child: const Text(
             "Delete",

@@ -2,11 +2,11 @@ import 'dart:developer';
 
 import 'package:dart_ping/dart_ping.dart';
 import 'package:get/get.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/models/dns_model.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/models/dns_model.dart';
 
 class SortedDnsPingController extends GetxController {
-  final NetshiftEngineController netshiftEngineController = Get.find();
+  final SpeednodeEngineController speednodeEngineController = Get.find();
   RxBool isPinging = false.obs;
   RxMap pingResultMap = {}.obs;
   RxList ananas = [].obs;
@@ -17,8 +17,8 @@ class SortedDnsPingController extends GetxController {
   RxList ananas5 = [].obs;
 
   List<DnsModel> get combinedList => [
-        ...netshiftEngineController.dnsListNetShift,
-        ...netshiftEngineController.dnsListPersonal
+        ...speednodeEngineController.dnsListSpeedNode,
+        ...speednodeEngineController.dnsListPersonal
       ];
 
   @override

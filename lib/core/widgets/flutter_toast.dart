@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 class FlutterToast {
   final String message;
-  static const platform = MethodChannel('com.netshift.dnschanger/toast');
+  static const platform = MethodChannel('com.speednode.dnschanger/toast');
   FlutterToast({
     required this.message,
   });

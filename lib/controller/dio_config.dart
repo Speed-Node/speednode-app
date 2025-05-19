@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:netshift/core/services/url_constant.dart';
+import 'package:speednode/core/services/url_constant.dart';
 
 final Dio dio = Dio();
 void configureDio() {

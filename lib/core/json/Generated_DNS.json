@@ -1,2097 +1,2097 @@
 {
     "validateDNS": [
         {
-            "name": "NetShift DNS - 1",
+            "name": "SpeedNode DNS - 1",
             "primaryDNS": "208.67.222.222",
             "secondaryDNS": "89.233.43.71"
         },
         {
-            "name": "NetShift DNS - 2",
+            "name": "SpeedNode DNS - 2",
             "primaryDNS": "74.82.42.42",
             "secondaryDNS": "4.2.2.4"
         },
         {
-            "name": "NetShift DNS - 3",
+            "name": "SpeedNode DNS - 3",
             "primaryDNS": "156.154.71.22",
             "secondaryDNS": "8.8.4.4"
         },
         {
-            "name": "NetShift DNS - 4",
+            "name": "SpeedNode DNS - 4",
             "primaryDNS": "5.202.100.101",
             "secondaryDNS": "91.239.100.100"
         },
         {
-            "name": "NetShift DNS - 5",
+            "name": "SpeedNode DNS - 5",
             "primaryDNS": "8.20.247.20",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 6",
+            "name": "SpeedNode DNS - 6",
             "primaryDNS": "80.80.80.80",
             "secondaryDNS": "91.239.100.100"
         },
         {
-            "name": "NetShift DNS - 7",
+            "name": "SpeedNode DNS - 7",
             "primaryDNS": "74.82.42.42",
             "secondaryDNS": "204.97.212.10"
         },
         {
-            "name": "NetShift DNS - 8",
+            "name": "SpeedNode DNS - 8",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "64.6.64.6"
         },
         {
-            "name": "NetShift DNS - 9",
+            "name": "SpeedNode DNS - 9",
             "primaryDNS": "216.146.35.35",
             "secondaryDNS": "216.146.36.36"
         },
         {
-            "name": "NetShift DNS - 10",
+            "name": "SpeedNode DNS - 10",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "80.67.169.12"
         },
         {
-            "name": "NetShift DNS - 11",
+            "name": "SpeedNode DNS - 11",
             "primaryDNS": "8.8.4.4",
             "secondaryDNS": "198.153.192.1"
         },
         {
-            "name": "NetShift DNS - 12",
+            "name": "SpeedNode DNS - 12",
             "primaryDNS": "156.154.70.22",
             "secondaryDNS": "80.67.169.12"
         },
         {
-            "name": "NetShift DNS - 13",
+            "name": "SpeedNode DNS - 13",
             "primaryDNS": "195.46.39.39",
             "secondaryDNS": "216.146.35.35"
         },
         {
-            "name": "NetShift DNS - 14",
+            "name": "SpeedNode DNS - 14",
             "primaryDNS": "212.23.8.1",
             "secondaryDNS": "129.250.35.251"
         },
         {
-            "name": "NetShift DNS - 15",
+            "name": "SpeedNode DNS - 15",
             "primaryDNS": "78.157.42.100",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 16",
+            "name": "SpeedNode DNS - 16",
             "primaryDNS": "205.171.2.65",
             "secondaryDNS": "209.244.0.4"
         },
         {
-            "name": "NetShift DNS - 17",
+            "name": "SpeedNode DNS - 17",
             "primaryDNS": "77.88.8.1",
             "secondaryDNS": "78.157.42.101"
         },
         {
-            "name": "NetShift DNS - 18",
+            "name": "SpeedNode DNS - 18",
             "primaryDNS": "5.202.100.100",
             "secondaryDNS": "1.1.1.1"
         },
         {
-            "name": "NetShift DNS - 19",
+            "name": "SpeedNode DNS - 19",
             "primaryDNS": "1.0.0.1",
             "secondaryDNS": "89.233.43.71"
         },
         {
-            "name": "NetShift DNS - 20",
+            "name": "SpeedNode DNS - 20",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "10.202.10.11"
         },
         {
-            "name": "NetShift DNS - 21",
+            "name": "SpeedNode DNS - 21",
             "primaryDNS": "129.250.35.250",
             "secondaryDNS": "208.67.222.222"
         },
         {
-            "name": "NetShift DNS - 22",
+            "name": "SpeedNode DNS - 22",
             "primaryDNS": "89.233.43.71",
             "secondaryDNS": "195.92.195.95"
         },
         {
-            "name": "NetShift DNS - 23",
+            "name": "SpeedNode DNS - 23",
             "primaryDNS": "89.233.43.71",
             "secondaryDNS": "5.202.100.100"
         },
         {
-            "name": "NetShift DNS - 24",
+            "name": "SpeedNode DNS - 24",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "216.146.35.35"
         },
         {
-            "name": "NetShift DNS - 25",
+            "name": "SpeedNode DNS - 25",
             "primaryDNS": "74.82.42.42",
             "secondaryDNS": "8.26.56.26"
         },
         {
-            "name": "NetShift DNS - 26",
+            "name": "SpeedNode DNS - 26",
             "primaryDNS": "208.67.222.222",
             "secondaryDNS": "8.26.56.26"
         },
         {
-            "name": "NetShift DNS - 27",
+            "name": "SpeedNode DNS - 27",
             "primaryDNS": "8.8.8.8",
             "secondaryDNS": "185.55.225.25"
         },
         {
-            "name": "NetShift DNS - 28",
+            "name": "SpeedNode DNS - 28",
             "primaryDNS": "5.202.100.101",
             "secondaryDNS": "198.153.192.1"
         },
         {
-            "name": "NetShift DNS - 29",
+            "name": "SpeedNode DNS - 29",
             "primaryDNS": "8.26.56.26",
             "secondaryDNS": "64.6.65.6"
         },
         {
-            "name": "NetShift DNS - 30",
+            "name": "SpeedNode DNS - 30",
             "primaryDNS": "78.157.42.100",
             "secondaryDNS": "10.202.10.11"
         },
         {
-            "name": "NetShift DNS - 31",
+            "name": "SpeedNode DNS - 31",
             "primaryDNS": "4.2.2.3",
             "secondaryDNS": "199.85.126.10"
         },
         {
-            "name": "NetShift DNS - 32",
+            "name": "SpeedNode DNS - 32",
             "primaryDNS": "156.154.71.5",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 33",
+            "name": "SpeedNode DNS - 33",
             "primaryDNS": "74.82.42.42",
             "secondaryDNS": "156.154.70.22"
         },
         {
-            "name": "NetShift DNS - 34",
+            "name": "SpeedNode DNS - 34",
             "primaryDNS": "4.2.2.5",
             "secondaryDNS": "77.88.8.8"
         },
         {
-            "name": "NetShift DNS - 35",
+            "name": "SpeedNode DNS - 35",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "10.202.10.11"
         },
         {
-            "name": "NetShift DNS - 36",
+            "name": "SpeedNode DNS - 36",
             "primaryDNS": "64.6.65.6",
             "secondaryDNS": "212.23.8.1"
         },
         {
-            "name": "NetShift DNS - 37",
+            "name": "SpeedNode DNS - 37",
             "primaryDNS": "216.146.35.35",
             "secondaryDNS": "204.74.101.1"
         },
         {
-            "name": "NetShift DNS - 38",
+            "name": "SpeedNode DNS - 38",
             "primaryDNS": "195.46.39.40",
             "secondaryDNS": "64.6.65.6"
         },
         {
-            "name": "NetShift DNS - 39",
+            "name": "SpeedNode DNS - 39",
             "primaryDNS": "156.154.71.22",
             "secondaryDNS": "5.202.100.101"
         },
         {
-            "name": "NetShift DNS - 40",
+            "name": "SpeedNode DNS - 40",
             "primaryDNS": "78.157.42.100",
             "secondaryDNS": "209.244.0.3"
         },
         {
-            "name": "NetShift DNS - 41",
+            "name": "SpeedNode DNS - 41",
             "primaryDNS": "205.171.2.65",
             "secondaryDNS": "185.51.200.2"
         },
         {
-            "name": "NetShift DNS - 42",
+            "name": "SpeedNode DNS - 42",
             "primaryDNS": "198.153.194.1",
             "secondaryDNS": "208.67.222.222"
         },
         {
-            "name": "NetShift DNS - 43",
+            "name": "SpeedNode DNS - 43",
             "primaryDNS": "205.171.2.65",
             "secondaryDNS": "77.88.8.1"
         },
         {
-            "name": "NetShift DNS - 44",
+            "name": "SpeedNode DNS - 44",
             "primaryDNS": "8.8.8.8",
             "secondaryDNS": "74.82.42.42"
         },
         {
-            "name": "NetShift DNS - 45",
+            "name": "SpeedNode DNS - 45",
             "primaryDNS": "1.0.0.1",
             "secondaryDNS": "216.146.35.35"
         },
         {
-            "name": "NetShift DNS - 46",
+            "name": "SpeedNode DNS - 46",
             "primaryDNS": "4.2.2.1",
             "secondaryDNS": "156.154.71.22"
         },
         {
-            "name": "NetShift DNS - 47",
+            "name": "SpeedNode DNS - 47",
             "primaryDNS": "199.2.252.10",
             "secondaryDNS": "212.23.3.1"
         },
         {
-            "name": "NetShift DNS - 48",
+            "name": "SpeedNode DNS - 48",
             "primaryDNS": "1.0.0.1",
             "secondaryDNS": "84.200.70.40"
         },
         {
-            "name": "NetShift DNS - 49",
+            "name": "SpeedNode DNS - 49",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "77.88.8.1"
         },
         {
-            "name": "NetShift DNS - 50",
+            "name": "SpeedNode DNS - 50",
             "primaryDNS": "208.67.200.200",
             "secondaryDNS": "85.15.1.15"
         },
         {
-            "name": "NetShift DNS - 51",
+            "name": "SpeedNode DNS - 51",
             "primaryDNS": "185.51.200.2",
             "secondaryDNS": "195.46.39.39"
         },
         {
-            "name": "NetShift DNS - 52",
+            "name": "SpeedNode DNS - 52",
             "primaryDNS": "64.6.64.6",
             "secondaryDNS": "204.97.212.10"
         },
         {
-            "name": "NetShift DNS - 53",
+            "name": "SpeedNode DNS - 53",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "91.239.100.100"
         },
         {
-            "name": "NetShift DNS - 54",
+            "name": "SpeedNode DNS - 54",
             "primaryDNS": "156.154.70.22",
             "secondaryDNS": "209.244.0.3"
         },
         {
-            "name": "NetShift DNS - 55",
+            "name": "SpeedNode DNS - 55",
             "primaryDNS": "84.200.69.80",
             "secondaryDNS": "10.202.10.102"
         },
         {
-            "name": "NetShift DNS - 56",
+            "name": "SpeedNode DNS - 56",
             "primaryDNS": "204.117.214.10",
             "secondaryDNS": "64.6.65.6"
         },
         {
-            "name": "NetShift DNS - 57",
+            "name": "SpeedNode DNS - 57",
             "primaryDNS": "204.69.234.1",
             "secondaryDNS": "9.9.9.9"
         },
         {
-            "name": "NetShift DNS - 58",
+            "name": "SpeedNode DNS - 58",
             "primaryDNS": "1.1.1.1",
             "secondaryDNS": "212.23.8.1"
         },
         {
-            "name": "NetShift DNS - 59",
+            "name": "SpeedNode DNS - 59",
             "primaryDNS": "156.154.70.5",
             "secondaryDNS": "10.202.10.102"
         },
         {
-            "name": "NetShift DNS - 60",
+            "name": "SpeedNode DNS - 60",
             "primaryDNS": "85.15.1.15",
             "secondaryDNS": "1.1.1.1"
         },
         {
-            "name": "NetShift DNS - 61",
+            "name": "SpeedNode DNS - 61",
             "primaryDNS": "49.112.112.112",
             "secondaryDNS": "8.26.56.26"
         },
         {
-            "name": "NetShift DNS - 62",
+            "name": "SpeedNode DNS - 62",
             "primaryDNS": "198.153.194.1",
             "secondaryDNS": "156.154.71.22"
         },
         {
-            "name": "NetShift DNS - 63",
+            "name": "SpeedNode DNS - 63",
             "primaryDNS": "204.69.234.1",
             "secondaryDNS": "199.2.252.10"
         },
         {
-            "name": "NetShift DNS - 64",
+            "name": "SpeedNode DNS - 64",
             "primaryDNS": "5.202.100.101",
             "secondaryDNS": "205.171.2.65"
         },
         {
-            "name": "NetShift DNS - 65",
+            "name": "SpeedNode DNS - 65",
             "primaryDNS": "199.85.127.10",
             "secondaryDNS": "77.88.8.8"
         },
         {
-            "name": "NetShift DNS - 66",
+            "name": "SpeedNode DNS - 66",
             "primaryDNS": "8.20.247.20",
             "secondaryDNS": "89.233.43.71"
         },
         {
-            "name": "NetShift DNS - 67",
+            "name": "SpeedNode DNS - 67",
             "primaryDNS": "198.153.192.1",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 68",
+            "name": "SpeedNode DNS - 68",
             "primaryDNS": "85.15.1.15",
             "secondaryDNS": "4.2.2.5"
         },
         {
-            "name": "NetShift DNS - 69",
+            "name": "SpeedNode DNS - 69",
             "primaryDNS": "10.202.10.202",
             "secondaryDNS": "212.23.3.1"
         },
         {
-            "name": "NetShift DNS - 70",
+            "name": "SpeedNode DNS - 70",
             "primaryDNS": "208.67.222.222",
             "secondaryDNS": "195.92.195.95"
         },
         {
-            "name": "NetShift DNS - 71",
+            "name": "SpeedNode DNS - 71",
             "primaryDNS": "199.2.252.10",
             "secondaryDNS": "129.250.35.251"
         },
         {
-            "name": "NetShift DNS - 72",
+            "name": "SpeedNode DNS - 72",
             "primaryDNS": "198.153.194.1",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 73",
+            "name": "SpeedNode DNS - 73",
             "primaryDNS": "78.157.42.100",
             "secondaryDNS": "9.9.9.9"
         },
         {
-            "name": "NetShift DNS - 74",
+            "name": "SpeedNode DNS - 74",
             "primaryDNS": "80.67.169.40",
             "secondaryDNS": "1.1.1.1"
         },
         {
-            "name": "NetShift DNS - 75",
+            "name": "SpeedNode DNS - 75",
             "primaryDNS": "209.244.0.3",
             "secondaryDNS": "156.154.70.5"
         },
         {
-            "name": "NetShift DNS - 76",
+            "name": "SpeedNode DNS - 76",
             "primaryDNS": "195.92.195.95",
             "secondaryDNS": "4.2.2.3"
         },
         {
-            "name": "NetShift DNS - 77",
+            "name": "SpeedNode DNS - 77",
             "primaryDNS": "5.202.100.101",
             "secondaryDNS": "64.6.65.6"
         },
         {
-            "name": "NetShift DNS - 78",
+            "name": "SpeedNode DNS - 78",
             "primaryDNS": "5.202.100.100",
             "secondaryDNS": "195.92.195.94"
         },
         {
-            "name": "NetShift DNS - 79",
+            "name": "SpeedNode DNS - 79",
             "primaryDNS": "49.112.112.112",
             "secondaryDNS": "216.146.35.35"
         },
         {
-            "name": "NetShift DNS - 80",
+            "name": "SpeedNode DNS - 80",
             "primaryDNS": "185.55.225.25",
             "secondaryDNS": "156.154.70.5"
         },
         {
-            "name": "NetShift DNS - 81",
+            "name": "SpeedNode DNS - 81",
             "primaryDNS": "10.202.10.202",
             "secondaryDNS": "10.202.10.11"
         },
         {
-            "name": "NetShift DNS - 82",
+            "name": "SpeedNode DNS - 82",
             "primaryDNS": "204.69.234.1",
             "secondaryDNS": "77.88.8.1"
         },
         {
-            "name": "NetShift DNS - 83",
+            "name": "SpeedNode DNS - 83",
             "primaryDNS": "199.85.126.10",
             "secondaryDNS": "5.202.100.101"
         },
         {
-            "name": "NetShift DNS - 84",
+            "name": "SpeedNode DNS - 84",
             "primaryDNS": "199.85.126.10",
             "secondaryDNS": "209.244.0.4"
         },
         {
-            "name": "NetShift DNS - 85",
+            "name": "SpeedNode DNS - 85",
             "primaryDNS": "84.200.70.40",
             "secondaryDNS": "178.22.122.100"
         },
         {
-            "name": "NetShift DNS - 86",
+            "name": "SpeedNode DNS - 86",
             "primaryDNS": "185.51.200.2",
             "secondaryDNS": "77.88.8.8"
         },
         {
-            "name": "NetShift DNS - 87",
+            "name": "SpeedNode DNS - 87",
             "primaryDNS": "156.154.70.1",
             "secondaryDNS": "84.200.69.80"
         },
         {
-            "name": "NetShift DNS - 88",
+            "name": "SpeedNode DNS - 88",
             "primaryDNS": "74.82.42.42",
             "secondaryDNS": "199.85.126.10"
         },
         {
-            "name": "NetShift DNS - 89",
+            "name": "SpeedNode DNS - 89",
             "primaryDNS": "204.69.234.1",
             "secondaryDNS": "156.154.70.22"
         },
         {
-            "name": "NetShift DNS - 90",
+            "name": "SpeedNode DNS - 90",
             "primaryDNS": "89.233.43.71",
             "secondaryDNS": "204.69.234.1"
         },
         {
-            "name": "NetShift DNS - 91",
+            "name": "SpeedNode DNS - 91",
             "primaryDNS": "195.92.195.95",
             "secondaryDNS": "8.8.4.4"
         },
         {
-            "name": "NetShift DNS - 92",
+            "name": "SpeedNode DNS - 92",
             "primaryDNS": "85.15.1.15",
             "secondaryDNS": "10.202.10.202"
         },
         {
-            "name": "NetShift DNS - 93",
+            "name": "SpeedNode DNS - 93",
             "primaryDNS": "216.146.36.36",
             "secondaryDNS": "195.46.39.39"
         },
         {
-            "name": "NetShift DNS - 94",
+            "name": "SpeedNode DNS - 94",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "178.22.122.100"
         },
         {
-            "name": "NetShift DNS - 95",
+            "name": "SpeedNode DNS - 95",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "178.22.122.100"
         },
         {
-            "name": "NetShift DNS - 96",
+            "name": "SpeedNode DNS - 96",
             "primaryDNS": "204.69.234.1",
             "secondaryDNS": "80.80.81.81"
         },
         {
-            "name": "NetShift DNS - 97",
+            "name": "SpeedNode DNS - 97",
             "primaryDNS": "156.154.70.1",
             "secondaryDNS": "156.154.70.22"
         },
         {
-            "name": "NetShift DNS - 98",
+            "name": "SpeedNode DNS - 98",
             "primaryDNS": "156.154.70.22",
             "secondaryDNS": "8.8.4.4"
         },
         {
-            "name": "NetShift DNS - 99",
+            "name": "SpeedNode DNS - 99",
             "primaryDNS": "185.55.226.26",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 100",
+            "name": "SpeedNode DNS - 100",
             "primaryDNS": "80.80.81.81",
             "secondaryDNS": "198.153.194.1"
         },
         {
-            "name": "NetShift DNS - 101",
+            "name": "SpeedNode DNS - 101",
             "primaryDNS": "195.46.39.40",
             "secondaryDNS": "8.8.4.4"
         },
         {
-            "name": "NetShift DNS - 102",
+            "name": "SpeedNode DNS - 102",
             "primaryDNS": "4.2.2.2",
             "secondaryDNS": "156.154.70.22"
         },
         {
-            "name": "NetShift DNS - 103",
+            "name": "SpeedNode DNS - 103",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "80.67.169.40"
         },
         {
-            "name": "NetShift DNS - 104",
+            "name": "SpeedNode DNS - 104",
             "primaryDNS": "4.2.2.3",
             "secondaryDNS": "49.112.112.112"
         },
         {
-            "name": "NetShift DNS - 105",
+            "name": "SpeedNode DNS - 105",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "185.55.225.25"
         },
         {
-            "name": "NetShift DNS - 106",
+            "name": "SpeedNode DNS - 106",
             "primaryDNS": "5.202.100.100",
             "secondaryDNS": "195.46.39.39"
         },
         {
-            "name": "NetShift DNS - 107",
+            "name": "SpeedNode DNS - 107",
             "primaryDNS": "8.8.8.8",
             "secondaryDNS": "209.244.0.4"
         },
         {
-            "name": "NetShift DNS - 108",
+            "name": "SpeedNode DNS - 108",
             "primaryDNS": "199.85.126.10",
             "secondaryDNS": "199.2.252.10"
         },
         {
-            "name": "NetShift DNS - 109",
+            "name": "SpeedNode DNS - 109",
             "primaryDNS": "195.92.195.95",
             "secondaryDNS": "195.92.195.94"
         },
         {
-            "name": "NetShift DNS - 110",
+            "name": "SpeedNode DNS - 110",
             "primaryDNS": "64.6.64.6",
             "secondaryDNS": "1.0.0.1"
         },
         {
-            "name": "NetShift DNS - 111",
+            "name": "SpeedNode DNS - 111",
             "primaryDNS": "80.80.80.80",
             "secondaryDNS": "10.202.10.202"
         },
         {
-            "name": "NetShift DNS - 112",
+            "name": "SpeedNode DNS - 112",
             "primaryDNS": "178.22.122.100",
             "secondaryDNS": "4.2.2.2"
         },
         {
-            "name": "NetShift DNS - 113",
+            "name": "SpeedNode DNS - 113",
             "primaryDNS": "156.154.70.1",
             "secondaryDNS": "84.200.70.40"
         },
         {
-            "name": "NetShift DNS - 114",
+            "name": "SpeedNode DNS - 114",
             "primaryDNS": "78.157.42.100",
             "secondaryDNS": "205.171.2.65"
         },
         {
-            "name": "NetShift DNS - 115",
+            "name": "SpeedNode DNS - 115",
             "primaryDNS": "8.8.8.8",
             "secondaryDNS": "85.15.1.15"
         },
         {
-            "name": "NetShift DNS - 116",
+            "name": "SpeedNode DNS - 116",
             "primaryDNS": "5.202.100.101",
             "secondaryDNS": "10.202.10.10"
         },
         {
-            "name": "NetShift DNS - 117",
+            "name": "SpeedNode DNS - 117",
             "primaryDNS": "185.55.226.26",
             "secondaryDNS": "4.2.2.5"
         },
         {
-            "name": "NetShift DNS - 118",
+            "name": "SpeedNode DNS - 118",
             "primaryDNS": "208.67.200.200",
             "secondaryDNS": "212.23.8.1"
         },
         {
-            "name": "NetShift DNS - 119",
+            "name": "SpeedNode DNS - 119",
             "primaryDNS": "129.250.35.251",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 120",
+            "name": "SpeedNode DNS - 120",
             "primaryDNS": "89.233.43.71",
             "secondaryDNS": "80.67.169.40"
         },
         {
-            "name": "NetShift DNS - 121",
+            "name": "SpeedNode DNS - 121",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "80.67.169.40"
         },
         {
-            "name": "NetShift DNS - 122",
+            "name": "SpeedNode DNS - 122",
             "primaryDNS": "91.239.100.100",
             "secondaryDNS": "78.157.42.101"
         },
         {
-            "name": "NetShift DNS - 123",
+            "name": "SpeedNode DNS - 123",
             "primaryDNS": "4.2.2.6",
             "secondaryDNS": "64.6.64.6"
         },
         {
-            "name": "NetShift DNS - 124",
+            "name": "SpeedNode DNS - 124",
             "primaryDNS": "205.171.2.65",
             "secondaryDNS": "84.200.69.80"
         },
         {
-            "name": "NetShift DNS - 125",
+            "name": "SpeedNode DNS - 125",
             "primaryDNS": "199.2.252.10",
             "secondaryDNS": "212.23.3.1"
         },
         {
-            "name": "NetShift DNS - 126",
+            "name": "SpeedNode DNS - 126",
             "primaryDNS": "80.67.169.40",
             "secondaryDNS": "89.233.43.71"
         },
         {
-            "name": "NetShift DNS - 127",
+            "name": "SpeedNode DNS - 127",
             "primaryDNS": "89.233.43.71",
             "secondaryDNS": "199.2.252.10"
         },
         {
-            "name": "NetShift DNS - 128",
+            "name": "SpeedNode DNS - 128",
             "primaryDNS": "1.1.1.1",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 129",
+            "name": "SpeedNode DNS - 129",
             "primaryDNS": "199.85.127.10",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 130",
+            "name": "SpeedNode DNS - 130",
             "primaryDNS": "212.23.8.1",
             "secondaryDNS": "4.2.2.3"
         },
         {
-            "name": "NetShift DNS - 131",
+            "name": "SpeedNode DNS - 131",
             "primaryDNS": "49.112.112.112",
             "secondaryDNS": "78.157.42.101"
         },
         {
-            "name": "NetShift DNS - 132",
+            "name": "SpeedNode DNS - 132",
             "primaryDNS": "129.250.35.251",
             "secondaryDNS": "5.202.100.100"
         },
         {
-            "name": "NetShift DNS - 133",
+            "name": "SpeedNode DNS - 133",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "8.8.8.8"
         },
         {
-            "name": "NetShift DNS - 134",
+            "name": "SpeedNode DNS - 134",
             "primaryDNS": "216.146.35.35",
             "secondaryDNS": "209.244.0.3"
         },
         {
-            "name": "NetShift DNS - 135",
+            "name": "SpeedNode DNS - 135",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "212.23.3.1"
         },
         {
-            "name": "NetShift DNS - 136",
+            "name": "SpeedNode DNS - 136",
             "primaryDNS": "78.157.42.100",
             "secondaryDNS": "9.9.9.9"
         },
         {
-            "name": "NetShift DNS - 137",
+            "name": "SpeedNode DNS - 137",
             "primaryDNS": "91.239.100.100",
             "secondaryDNS": "156.154.70.22"
         },
         {
-            "name": "NetShift DNS - 138",
+            "name": "SpeedNode DNS - 138",
             "primaryDNS": "209.244.0.3",
             "secondaryDNS": "64.6.65.6"
         },
         {
-            "name": "NetShift DNS - 139",
+            "name": "SpeedNode DNS - 139",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "205.171.3.65"
         },
         {
-            "name": "NetShift DNS - 140",
+            "name": "SpeedNode DNS - 140",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "5.202.100.101"
         },
         {
-            "name": "NetShift DNS - 141",
+            "name": "SpeedNode DNS - 141",
             "primaryDNS": "185.55.225.25",
             "secondaryDNS": "80.80.81.81"
         },
         {
-            "name": "NetShift DNS - 142",
+            "name": "SpeedNode DNS - 142",
             "primaryDNS": "185.55.225.25",
             "secondaryDNS": "204.69.234.1"
         },
         {
-            "name": "NetShift DNS - 143",
+            "name": "SpeedNode DNS - 143",
             "primaryDNS": "8.20.247.20",
             "secondaryDNS": "209.244.0.3"
         },
         {
-            "name": "NetShift DNS - 144",
+            "name": "SpeedNode DNS - 144",
             "primaryDNS": "205.171.3.65",
             "secondaryDNS": "80.80.81.81"
         },
         {
-            "name": "NetShift DNS - 145",
+            "name": "SpeedNode DNS - 145",
             "primaryDNS": "209.244.0.3",
             "secondaryDNS": "129.250.35.250"
         },
         {
-            "name": "NetShift DNS - 146",
+            "name": "SpeedNode DNS - 146",
             "primaryDNS": "156.154.71.5",
             "secondaryDNS": "199.85.126.10"
         },
         {
-            "name": "NetShift DNS - 147",
+            "name": "SpeedNode DNS - 147",
             "primaryDNS": "129.250.35.250",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 148",
+            "name": "SpeedNode DNS - 148",
             "primaryDNS": "4.2.2.1",
             "secondaryDNS": "78.157.42.101"
         },
         {
-            "name": "NetShift DNS - 149",
+            "name": "SpeedNode DNS - 149",
             "primaryDNS": "198.153.194.1",
             "secondaryDNS": "216.146.36.36"
         },
         {
-            "name": "NetShift DNS - 150",
+            "name": "SpeedNode DNS - 150",
             "primaryDNS": "195.46.39.40",
             "secondaryDNS": "89.233.43.71"
         },
         {
-            "name": "NetShift DNS - 151",
+            "name": "SpeedNode DNS - 151",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "195.92.195.95"
         },
         {
-            "name": "NetShift DNS - 152",
+            "name": "SpeedNode DNS - 152",
             "primaryDNS": "199.85.127.10",
             "secondaryDNS": "185.55.225.25"
         },
         {
-            "name": "NetShift DNS - 153",
+            "name": "SpeedNode DNS - 153",
             "primaryDNS": "91.239.100.100",
             "secondaryDNS": "212.23.8.1"
         },
         {
-            "name": "NetShift DNS - 154",
+            "name": "SpeedNode DNS - 154",
             "primaryDNS": "8.8.8.8",
             "secondaryDNS": "209.244.0.3"
         },
         {
-            "name": "NetShift DNS - 155",
+            "name": "SpeedNode DNS - 155",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "4.2.2.4"
         },
         {
-            "name": "NetShift DNS - 156",
+            "name": "SpeedNode DNS - 156",
             "primaryDNS": "10.202.10.102",
             "secondaryDNS": "4.2.2.5"
         },
         {
-            "name": "NetShift DNS - 157",
+            "name": "SpeedNode DNS - 157",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 158",
+            "name": "SpeedNode DNS - 158",
             "primaryDNS": "185.55.226.26",
             "secondaryDNS": "199.85.126.10"
         },
         {
-            "name": "NetShift DNS - 159",
+            "name": "SpeedNode DNS - 159",
             "primaryDNS": "205.171.2.65",
             "secondaryDNS": "209.244.0.4"
         },
         {
-            "name": "NetShift DNS - 160",
+            "name": "SpeedNode DNS - 160",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "195.92.195.94"
         },
         {
-            "name": "NetShift DNS - 161",
+            "name": "SpeedNode DNS - 161",
             "primaryDNS": "85.15.1.15",
             "secondaryDNS": "199.2.252.10"
         },
         {
-            "name": "NetShift DNS - 162",
+            "name": "SpeedNode DNS - 162",
             "primaryDNS": "199.85.127.10",
             "secondaryDNS": "10.202.10.10"
         },
         {
-            "name": "NetShift DNS - 163",
+            "name": "SpeedNode DNS - 163",
             "primaryDNS": "199.85.126.10",
             "secondaryDNS": "198.153.192.1"
         },
         {
-            "name": "NetShift DNS - 164",
+            "name": "SpeedNode DNS - 164",
             "primaryDNS": "4.2.2.5",
             "secondaryDNS": "1.0.0.1"
         },
         {
-            "name": "NetShift DNS - 165",
+            "name": "SpeedNode DNS - 165",
             "primaryDNS": "216.146.35.35",
             "secondaryDNS": "80.80.81.81"
         },
         {
-            "name": "NetShift DNS - 166",
+            "name": "SpeedNode DNS - 166",
             "primaryDNS": "199.85.126.10",
             "secondaryDNS": "80.80.80.80"
         },
         {
-            "name": "NetShift DNS - 167",
+            "name": "SpeedNode DNS - 167",
             "primaryDNS": "78.157.42.100",
             "secondaryDNS": "9.9.9.9"
         },
         {
-            "name": "NetShift DNS - 168",
+            "name": "SpeedNode DNS - 168",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "205.171.2.65"
         },
         {
-            "name": "NetShift DNS - 169",
+            "name": "SpeedNode DNS - 169",
             "primaryDNS": "129.250.35.251",
             "secondaryDNS": "78.157.42.101"
         },
         {
-            "name": "NetShift DNS - 170",
+            "name": "SpeedNode DNS - 170",
             "primaryDNS": "8.8.8.8",
             "secondaryDNS": "74.82.42.42"
         },
         {
-            "name": "NetShift DNS - 171",
+            "name": "SpeedNode DNS - 171",
             "primaryDNS": "198.153.192.1",
             "secondaryDNS": "216.146.36.36"
         },
         {
-            "name": "NetShift DNS - 172",
+            "name": "SpeedNode DNS - 172",
             "primaryDNS": "84.200.70.40",
             "secondaryDNS": "78.157.42.100"
         },
         {
-            "name": "NetShift DNS - 173",
+            "name": "SpeedNode DNS - 173",
             "primaryDNS": "80.67.169.12",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 174",
+            "name": "SpeedNode DNS - 174",
             "primaryDNS": "185.55.226.26",
             "secondaryDNS": "198.153.192.1"
         },
         {
-            "name": "NetShift DNS - 175",
+            "name": "SpeedNode DNS - 175",
             "primaryDNS": "204.117.214.10",
             "secondaryDNS": "77.88.8.1"
         },
         {
-            "name": "NetShift DNS - 176",
+            "name": "SpeedNode DNS - 176",
             "primaryDNS": "178.22.122.100",
             "secondaryDNS": "78.157.42.100"
         },
         {
-            "name": "NetShift DNS - 177",
+            "name": "SpeedNode DNS - 177",
             "primaryDNS": "209.244.0.3",
             "secondaryDNS": "195.92.195.94"
         },
         {
-            "name": "NetShift DNS - 178",
+            "name": "SpeedNode DNS - 178",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "199.85.126.10"
         },
         {
-            "name": "NetShift DNS - 179",
+            "name": "SpeedNode DNS - 179",
             "primaryDNS": "4.2.2.2",
             "secondaryDNS": "208.67.200.200"
         },
         {
-            "name": "NetShift DNS - 180",
+            "name": "SpeedNode DNS - 180",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "204.97.212.10"
         },
         {
-            "name": "NetShift DNS - 181",
+            "name": "SpeedNode DNS - 181",
             "primaryDNS": "84.200.70.40",
             "secondaryDNS": "5.202.100.100"
         },
         {
-            "name": "NetShift DNS - 182",
+            "name": "SpeedNode DNS - 182",
             "primaryDNS": "78.157.42.101",
             "secondaryDNS": "10.202.10.11"
         },
         {
-            "name": "NetShift DNS - 183",
+            "name": "SpeedNode DNS - 183",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "195.92.195.94"
         },
         {
-            "name": "NetShift DNS - 184",
+            "name": "SpeedNode DNS - 184",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "178.22.122.100"
         },
         {
-            "name": "NetShift DNS - 185",
+            "name": "SpeedNode DNS - 185",
             "primaryDNS": "8.26.56.26",
             "secondaryDNS": "85.15.1.15"
         },
         {
-            "name": "NetShift DNS - 186",
+            "name": "SpeedNode DNS - 186",
             "primaryDNS": "199.85.126.10",
             "secondaryDNS": "5.202.100.100"
         },
         {
-            "name": "NetShift DNS - 187",
+            "name": "SpeedNode DNS - 187",
             "primaryDNS": "4.2.2.2",
             "secondaryDNS": "156.154.71.22"
         },
         {
-            "name": "NetShift DNS - 188",
+            "name": "SpeedNode DNS - 188",
             "primaryDNS": "5.202.100.100",
             "secondaryDNS": "91.239.100.100"
         },
         {
-            "name": "NetShift DNS - 189",
+            "name": "SpeedNode DNS - 189",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "199.2.252.10"
         },
         {
-            "name": "NetShift DNS - 190",
+            "name": "SpeedNode DNS - 190",
             "primaryDNS": "80.67.169.40",
             "secondaryDNS": "84.200.69.80"
         },
         {
-            "name": "NetShift DNS - 191",
+            "name": "SpeedNode DNS - 191",
             "primaryDNS": "4.2.2.4",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 192",
+            "name": "SpeedNode DNS - 192",
             "primaryDNS": "209.244.0.3",
             "secondaryDNS": "195.92.195.95"
         },
         {
-            "name": "NetShift DNS - 193",
+            "name": "SpeedNode DNS - 193",
             "primaryDNS": "89.233.43.71",
             "secondaryDNS": "77.88.8.1"
         },
         {
-            "name": "NetShift DNS - 194",
+            "name": "SpeedNode DNS - 194",
             "primaryDNS": "204.69.234.1",
             "secondaryDNS": "209.244.0.4"
         },
         {
-            "name": "NetShift DNS - 195",
+            "name": "SpeedNode DNS - 195",
             "primaryDNS": "85.15.1.14",
             "secondaryDNS": "185.51.200.2"
         },
         {
-            "name": "NetShift DNS - 196",
+            "name": "SpeedNode DNS - 196",
             "primaryDNS": "156.154.70.22",
             "secondaryDNS": "4.2.2.3"
         },
         {
-            "name": "NetShift DNS - 197",
+            "name": "SpeedNode DNS - 197",
             "primaryDNS": "205.171.2.65",
             "secondaryDNS": "178.22.122.100"
         },
         {
-            "name": "NetShift DNS - 198",
+            "name": "SpeedNode DNS - 198",
             "primaryDNS": "208.67.200.200",
             "secondaryDNS": "4.2.2.6"
         },
         {
-            "name": "NetShift DNS - 199",
+            "name": "SpeedNode DNS - 199",
             "primaryDNS": "4.2.2.3",
             "secondaryDNS": "74.82.42.42"
         },
         {
-            "name": "NetShift DNS - 200",
+            "name": "SpeedNode DNS - 200",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "64.6.65.6"
         },
         {
-            "name": "NetShift DNS - 201",
+            "name": "SpeedNode DNS - 201",
             "primaryDNS": "216.146.36.36",
             "secondaryDNS": "156.154.71.5"
         },
         {
-            "name": "NetShift DNS - 202",
+            "name": "SpeedNode DNS - 202",
             "primaryDNS": "208.67.200.200",
             "secondaryDNS": "195.46.39.40"
         },
         {
-            "name": "NetShift DNS - 203",
+            "name": "SpeedNode DNS - 203",
             "primaryDNS": "4.2.2.2",
             "secondaryDNS": "195.92.195.94"
         },
         {
-            "name": "NetShift DNS - 204",
+            "name": "SpeedNode DNS - 204",
             "primaryDNS": "1.0.0.1",
             "secondaryDNS": "80.67.169.40"
         },
         {
-            "name": "NetShift DNS - 205",
+            "name": "SpeedNode DNS - 205",
             "primaryDNS": "216.146.35.35",
             "secondaryDNS": "195.92.195.95"
         },
         {
-            "name": "NetShift DNS - 206",
+            "name": "SpeedNode DNS - 206",
             "primaryDNS": "80.80.80.80",
             "secondaryDNS": "195.92.195.94"
         },
         {
-            "name": "NetShift DNS - 207",
+            "name": "SpeedNode DNS - 207",
             "primaryDNS": "5.202.100.100",
             "secondaryDNS": "198.153.192.1"
         },
         {
-            "name": "NetShift DNS - 208",
+            "name": "SpeedNode DNS - 208",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "205.171.3.65"
         },
         {
-            "name": "NetShift DNS - 209",
+            "name": "SpeedNode DNS - 209",
             "primaryDNS": "129.250.35.250",
             "secondaryDNS": "74.82.42.42"
         },
         {
-            "name": "NetShift DNS - 210",
+            "name": "SpeedNode DNS - 210",
             "primaryDNS": "156.154.71.22",
             "secondaryDNS": "4.2.2.4"
         },
         {
-            "name": "NetShift DNS - 211",
+            "name": "SpeedNode DNS - 211",
             "primaryDNS": "77.88.8.8",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 212",
+            "name": "SpeedNode DNS - 212",
             "primaryDNS": "5.202.100.100",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 213",
+            "name": "SpeedNode DNS - 213",
             "primaryDNS": "185.55.225.25",
             "secondaryDNS": "156.154.71.22"
         },
         {
-            "name": "NetShift DNS - 214",
+            "name": "SpeedNode DNS - 214",
             "primaryDNS": "4.2.2.3",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 215",
+            "name": "SpeedNode DNS - 215",
             "primaryDNS": "204.117.214.10",
             "secondaryDNS": "208.67.222.222"
         },
         {
-            "name": "NetShift DNS - 216",
+            "name": "SpeedNode DNS - 216",
             "primaryDNS": "84.200.69.80",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 217",
+            "name": "SpeedNode DNS - 217",
             "primaryDNS": "178.22.122.100",
             "secondaryDNS": "156.154.70.1"
         },
         {
-            "name": "NetShift DNS - 218",
+            "name": "SpeedNode DNS - 218",
             "primaryDNS": "156.154.70.22",
             "secondaryDNS": "195.46.39.39"
         },
         {
-            "name": "NetShift DNS - 219",
+            "name": "SpeedNode DNS - 219",
             "primaryDNS": "89.233.43.71",
             "secondaryDNS": "77.88.8.1"
         },
         {
-            "name": "NetShift DNS - 220",
+            "name": "SpeedNode DNS - 220",
             "primaryDNS": "85.15.1.15",
             "secondaryDNS": "156.154.70.5"
         },
         {
-            "name": "NetShift DNS - 221",
+            "name": "SpeedNode DNS - 221",
             "primaryDNS": "204.117.214.10",
             "secondaryDNS": "198.153.192.1"
         },
         {
-            "name": "NetShift DNS - 222",
+            "name": "SpeedNode DNS - 222",
             "primaryDNS": "129.250.35.251",
             "secondaryDNS": "205.171.3.65"
         },
         {
-            "name": "NetShift DNS - 223",
+            "name": "SpeedNode DNS - 223",
             "primaryDNS": "5.202.100.100",
             "secondaryDNS": "4.2.2.5"
         },
         {
-            "name": "NetShift DNS - 224",
+            "name": "SpeedNode DNS - 224",
             "primaryDNS": "91.239.100.100",
             "secondaryDNS": "195.46.39.40"
         },
         {
-            "name": "NetShift DNS - 225",
+            "name": "SpeedNode DNS - 225",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "156.154.71.5"
         },
         {
-            "name": "NetShift DNS - 226",
+            "name": "SpeedNode DNS - 226",
             "primaryDNS": "4.2.2.4",
             "secondaryDNS": "156.154.70.1"
         },
         {
-            "name": "NetShift DNS - 227",
+            "name": "SpeedNode DNS - 227",
             "primaryDNS": "4.2.2.5",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 228",
+            "name": "SpeedNode DNS - 228",
             "primaryDNS": "129.250.35.251",
             "secondaryDNS": "10.202.10.202"
         },
         {
-            "name": "NetShift DNS - 229",
+            "name": "SpeedNode DNS - 229",
             "primaryDNS": "198.153.192.1",
             "secondaryDNS": "10.202.10.202"
         },
         {
-            "name": "NetShift DNS - 230",
+            "name": "SpeedNode DNS - 230",
             "primaryDNS": "78.157.42.101",
             "secondaryDNS": "77.88.8.1"
         },
         {
-            "name": "NetShift DNS - 231",
+            "name": "SpeedNode DNS - 231",
             "primaryDNS": "1.1.1.1",
             "secondaryDNS": "195.46.39.40"
         },
         {
-            "name": "NetShift DNS - 232",
+            "name": "SpeedNode DNS - 232",
             "primaryDNS": "78.157.42.100",
             "secondaryDNS": "91.239.100.100"
         },
         {
-            "name": "NetShift DNS - 233",
+            "name": "SpeedNode DNS - 233",
             "primaryDNS": "156.154.71.22",
             "secondaryDNS": "49.112.112.112"
         },
         {
-            "name": "NetShift DNS - 234",
+            "name": "SpeedNode DNS - 234",
             "primaryDNS": "204.117.214.10",
             "secondaryDNS": "5.202.100.101"
         },
         {
-            "name": "NetShift DNS - 235",
+            "name": "SpeedNode DNS - 235",
             "primaryDNS": "80.80.80.80",
             "secondaryDNS": "91.239.100.100"
         },
         {
-            "name": "NetShift DNS - 236",
+            "name": "SpeedNode DNS - 236",
             "primaryDNS": "4.2.2.5",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 237",
+            "name": "SpeedNode DNS - 237",
             "primaryDNS": "10.202.10.202",
             "secondaryDNS": "64.6.64.6"
         },
         {
-            "name": "NetShift DNS - 238",
+            "name": "SpeedNode DNS - 238",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "10.202.10.202"
         },
         {
-            "name": "NetShift DNS - 239",
+            "name": "SpeedNode DNS - 239",
             "primaryDNS": "156.154.70.1",
             "secondaryDNS": "8.26.56.26"
         },
         {
-            "name": "NetShift DNS - 240",
+            "name": "SpeedNode DNS - 240",
             "primaryDNS": "5.202.100.101",
             "secondaryDNS": "185.55.225.25"
         },
         {
-            "name": "NetShift DNS - 241",
+            "name": "SpeedNode DNS - 241",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "78.157.42.101"
         },
         {
-            "name": "NetShift DNS - 242",
+            "name": "SpeedNode DNS - 242",
             "primaryDNS": "4.2.2.1",
             "secondaryDNS": "156.154.71.22"
         },
         {
-            "name": "NetShift DNS - 243",
+            "name": "SpeedNode DNS - 243",
             "primaryDNS": "216.146.36.36",
             "secondaryDNS": "185.51.200.2"
         },
         {
-            "name": "NetShift DNS - 244",
+            "name": "SpeedNode DNS - 244",
             "primaryDNS": "80.67.169.40",
             "secondaryDNS": "198.153.194.1"
         },
         {
-            "name": "NetShift DNS - 245",
+            "name": "SpeedNode DNS - 245",
             "primaryDNS": "185.55.225.25",
             "secondaryDNS": "199.2.252.10"
         },
         {
-            "name": "NetShift DNS - 246",
+            "name": "SpeedNode DNS - 246",
             "primaryDNS": "205.171.2.65",
             "secondaryDNS": "91.239.100.100"
         },
         {
-            "name": "NetShift DNS - 247",
+            "name": "SpeedNode DNS - 247",
             "primaryDNS": "199.85.127.10",
             "secondaryDNS": "10.202.10.202"
         },
         {
-            "name": "NetShift DNS - 248",
+            "name": "SpeedNode DNS - 248",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "208.67.222.222"
         },
         {
-            "name": "NetShift DNS - 249",
+            "name": "SpeedNode DNS - 249",
             "primaryDNS": "91.239.100.100",
             "secondaryDNS": "80.80.80.80"
         },
         {
-            "name": "NetShift DNS - 250",
+            "name": "SpeedNode DNS - 250",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "4.2.2.5"
         },
         {
-            "name": "NetShift DNS - 251",
+            "name": "SpeedNode DNS - 251",
             "primaryDNS": "208.67.200.200",
             "secondaryDNS": "156.154.70.1"
         },
         {
-            "name": "NetShift DNS - 252",
+            "name": "SpeedNode DNS - 252",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "77.88.8.8"
         },
         {
-            "name": "NetShift DNS - 253",
+            "name": "SpeedNode DNS - 253",
             "primaryDNS": "85.15.1.14",
             "secondaryDNS": "10.202.10.11"
         },
         {
-            "name": "NetShift DNS - 254",
+            "name": "SpeedNode DNS - 254",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "8.8.8.8"
         },
         {
-            "name": "NetShift DNS - 255",
+            "name": "SpeedNode DNS - 255",
             "primaryDNS": "10.202.10.11",
             "secondaryDNS": "49.112.112.112"
         },
         {
-            "name": "NetShift DNS - 256",
+            "name": "SpeedNode DNS - 256",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "10.202.10.10"
         },
         {
-            "name": "NetShift DNS - 257",
+            "name": "SpeedNode DNS - 257",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "156.154.70.5"
         },
         {
-            "name": "NetShift DNS - 258",
+            "name": "SpeedNode DNS - 258",
             "primaryDNS": "205.171.3.65",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 259",
+            "name": "SpeedNode DNS - 259",
             "primaryDNS": "204.69.234.1",
             "secondaryDNS": "205.171.2.65"
         },
         {
-            "name": "NetShift DNS - 260",
+            "name": "SpeedNode DNS - 260",
             "primaryDNS": "1.1.1.1",
             "secondaryDNS": "195.92.195.94"
         },
         {
-            "name": "NetShift DNS - 261",
+            "name": "SpeedNode DNS - 261",
             "primaryDNS": "4.2.2.2",
             "secondaryDNS": "77.88.8.8"
         },
         {
-            "name": "NetShift DNS - 262",
+            "name": "SpeedNode DNS - 262",
             "primaryDNS": "85.15.1.15",
             "secondaryDNS": "84.200.70.40"
         },
         {
-            "name": "NetShift DNS - 263",
+            "name": "SpeedNode DNS - 263",
             "primaryDNS": "4.2.2.6",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 264",
+            "name": "SpeedNode DNS - 264",
             "primaryDNS": "212.23.3.1",
             "secondaryDNS": "4.2.2.4"
         },
         {
-            "name": "NetShift DNS - 265",
+            "name": "SpeedNode DNS - 265",
             "primaryDNS": "64.6.65.6",
             "secondaryDNS": "10.202.10.202"
         },
         {
-            "name": "NetShift DNS - 266",
+            "name": "SpeedNode DNS - 266",
             "primaryDNS": "178.22.122.100",
             "secondaryDNS": "195.92.195.94"
         },
         {
-            "name": "NetShift DNS - 267",
+            "name": "SpeedNode DNS - 267",
             "primaryDNS": "195.46.39.39",
             "secondaryDNS": "209.244.0.3"
         },
         {
-            "name": "NetShift DNS - 268",
+            "name": "SpeedNode DNS - 268",
             "primaryDNS": "156.154.71.5",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 269",
+            "name": "SpeedNode DNS - 269",
             "primaryDNS": "8.26.56.26",
             "secondaryDNS": "156.154.71.5"
         },
         {
-            "name": "NetShift DNS - 270",
+            "name": "SpeedNode DNS - 270",
             "primaryDNS": "64.6.65.6",
             "secondaryDNS": "216.146.36.36"
         },
         {
-            "name": "NetShift DNS - 271",
+            "name": "SpeedNode DNS - 271",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "156.154.70.5"
         },
         {
-            "name": "NetShift DNS - 272",
+            "name": "SpeedNode DNS - 272",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "129.250.35.250"
         },
         {
-            "name": "NetShift DNS - 273",
+            "name": "SpeedNode DNS - 273",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "156.154.70.22"
         },
         {
-            "name": "NetShift DNS - 274",
+            "name": "SpeedNode DNS - 274",
             "primaryDNS": "10.202.10.202",
             "secondaryDNS": "198.153.192.1"
         },
         {
-            "name": "NetShift DNS - 275",
+            "name": "SpeedNode DNS - 275",
             "primaryDNS": "10.202.10.11",
             "secondaryDNS": "199.85.126.10"
         },
         {
-            "name": "NetShift DNS - 276",
+            "name": "SpeedNode DNS - 276",
             "primaryDNS": "85.15.1.14",
             "secondaryDNS": "185.55.226.26"
         },
         {
-            "name": "NetShift DNS - 277",
+            "name": "SpeedNode DNS - 277",
             "primaryDNS": "64.6.65.6",
             "secondaryDNS": "8.8.8.8"
         },
         {
-            "name": "NetShift DNS - 278",
+            "name": "SpeedNode DNS - 278",
             "primaryDNS": "10.202.10.11",
             "secondaryDNS": "78.157.42.101"
         },
         {
-            "name": "NetShift DNS - 279",
+            "name": "SpeedNode DNS - 279",
             "primaryDNS": "216.146.35.35",
             "secondaryDNS": "85.15.1.14"
         },
         {
-            "name": "NetShift DNS - 280",
+            "name": "SpeedNode DNS - 280",
             "primaryDNS": "129.250.35.251",
             "secondaryDNS": "8.8.4.4"
         },
         {
-            "name": "NetShift DNS - 281",
+            "name": "SpeedNode DNS - 281",
             "primaryDNS": "204.69.234.1",
             "secondaryDNS": "5.202.100.100"
         },
         {
-            "name": "NetShift DNS - 282",
+            "name": "SpeedNode DNS - 282",
             "primaryDNS": "80.80.81.81",
             "secondaryDNS": "4.2.2.4"
         },
         {
-            "name": "NetShift DNS - 283",
+            "name": "SpeedNode DNS - 283",
             "primaryDNS": "198.153.194.1",
             "secondaryDNS": "78.157.42.101"
         },
         {
-            "name": "NetShift DNS - 284",
+            "name": "SpeedNode DNS - 284",
             "primaryDNS": "49.112.112.112",
             "secondaryDNS": "185.55.226.26"
         },
         {
-            "name": "NetShift DNS - 285",
+            "name": "SpeedNode DNS - 285",
             "primaryDNS": "129.250.35.250",
             "secondaryDNS": "204.69.234.1"
         },
         {
-            "name": "NetShift DNS - 286",
+            "name": "SpeedNode DNS - 286",
             "primaryDNS": "209.244.0.3",
             "secondaryDNS": "77.88.8.1"
         },
         {
-            "name": "NetShift DNS - 287",
+            "name": "SpeedNode DNS - 287",
             "primaryDNS": "64.6.64.6",
             "secondaryDNS": "85.15.1.15"
         },
         {
-            "name": "NetShift DNS - 288",
+            "name": "SpeedNode DNS - 288",
             "primaryDNS": "198.153.192.1",
             "secondaryDNS": "204.69.234.1"
         },
         {
-            "name": "NetShift DNS - 289",
+            "name": "SpeedNode DNS - 289",
             "primaryDNS": "1.1.1.1",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 290",
+            "name": "SpeedNode DNS - 290",
             "primaryDNS": "8.8.4.4",
             "secondaryDNS": "4.2.2.4"
         },
         {
-            "name": "NetShift DNS - 291",
+            "name": "SpeedNode DNS - 291",
             "primaryDNS": "198.153.192.1",
             "secondaryDNS": "8.8.4.4"
         },
         {
-            "name": "NetShift DNS - 292",
+            "name": "SpeedNode DNS - 292",
             "primaryDNS": "80.67.169.12",
             "secondaryDNS": "195.46.39.39"
         },
         {
-            "name": "NetShift DNS - 293",
+            "name": "SpeedNode DNS - 293",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "4.2.2.3"
         },
         {
-            "name": "NetShift DNS - 294",
+            "name": "SpeedNode DNS - 294",
             "primaryDNS": "4.2.2.5",
             "secondaryDNS": "10.202.10.10"
         },
         {
-            "name": "NetShift DNS - 295",
+            "name": "SpeedNode DNS - 295",
             "primaryDNS": "199.85.127.10",
             "secondaryDNS": "80.67.169.40"
         },
         {
-            "name": "NetShift DNS - 296",
+            "name": "SpeedNode DNS - 296",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "85.15.1.14"
         },
         {
-            "name": "NetShift DNS - 297",
+            "name": "SpeedNode DNS - 297",
             "primaryDNS": "199.85.126.10",
             "secondaryDNS": "216.146.36.36"
         },
         {
-            "name": "NetShift DNS - 298",
+            "name": "SpeedNode DNS - 298",
             "primaryDNS": "4.2.2.4",
             "secondaryDNS": "212.23.3.1"
         },
         {
-            "name": "NetShift DNS - 299",
+            "name": "SpeedNode DNS - 299",
             "primaryDNS": "185.55.226.26",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 300",
+            "name": "SpeedNode DNS - 300",
             "primaryDNS": "8.8.4.4",
             "secondaryDNS": "198.153.194.1"
         },
         {
-            "name": "NetShift DNS - 301",
+            "name": "SpeedNode DNS - 301",
             "primaryDNS": "216.146.36.36",
             "secondaryDNS": "8.26.56.26"
         },
         {
-            "name": "NetShift DNS - 302",
+            "name": "SpeedNode DNS - 302",
             "primaryDNS": "80.67.169.40",
             "secondaryDNS": "64.6.64.6"
         },
         {
-            "name": "NetShift DNS - 303",
+            "name": "SpeedNode DNS - 303",
             "primaryDNS": "185.55.226.26",
             "secondaryDNS": "195.46.39.39"
         },
         {
-            "name": "NetShift DNS - 304",
+            "name": "SpeedNode DNS - 304",
             "primaryDNS": "5.202.100.100",
             "secondaryDNS": "199.85.126.10"
         },
         {
-            "name": "NetShift DNS - 305",
+            "name": "SpeedNode DNS - 305",
             "primaryDNS": "198.153.194.1",
             "secondaryDNS": "8.8.8.8"
         },
         {
-            "name": "NetShift DNS - 306",
+            "name": "SpeedNode DNS - 306",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "216.146.35.35"
         },
         {
-            "name": "NetShift DNS - 307",
+            "name": "SpeedNode DNS - 307",
             "primaryDNS": "212.23.3.1",
             "secondaryDNS": "199.2.252.10"
         },
         {
-            "name": "NetShift DNS - 308",
+            "name": "SpeedNode DNS - 308",
             "primaryDNS": "185.55.225.25",
             "secondaryDNS": "8.20.247.20"
         },
         {
-            "name": "NetShift DNS - 309",
+            "name": "SpeedNode DNS - 309",
             "primaryDNS": "156.154.70.22",
             "secondaryDNS": "195.46.39.39"
         },
         {
-            "name": "NetShift DNS - 310",
+            "name": "SpeedNode DNS - 310",
             "primaryDNS": "156.154.70.1",
             "secondaryDNS": "78.157.42.100"
         },
         {
-            "name": "NetShift DNS - 311",
+            "name": "SpeedNode DNS - 311",
             "primaryDNS": "80.80.80.80",
             "secondaryDNS": "129.250.35.251"
         },
         {
-            "name": "NetShift DNS - 312",
+            "name": "SpeedNode DNS - 312",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "80.67.169.40"
         },
         {
-            "name": "NetShift DNS - 313",
+            "name": "SpeedNode DNS - 313",
             "primaryDNS": "10.202.10.102",
             "secondaryDNS": "195.46.39.40"
         },
         {
-            "name": "NetShift DNS - 314",
+            "name": "SpeedNode DNS - 314",
             "primaryDNS": "156.154.70.5",
             "secondaryDNS": "4.2.2.4"
         },
         {
-            "name": "NetShift DNS - 315",
+            "name": "SpeedNode DNS - 315",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "1.0.0.1"
         },
         {
-            "name": "NetShift DNS - 316",
+            "name": "SpeedNode DNS - 316",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "80.80.81.81"
         },
         {
-            "name": "NetShift DNS - 317",
+            "name": "SpeedNode DNS - 317",
             "primaryDNS": "129.250.35.250",
             "secondaryDNS": "205.171.2.65"
         },
         {
-            "name": "NetShift DNS - 318",
+            "name": "SpeedNode DNS - 318",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 319",
+            "name": "SpeedNode DNS - 319",
             "primaryDNS": "77.88.8.8",
             "secondaryDNS": "10.202.10.11"
         },
         {
-            "name": "NetShift DNS - 320",
+            "name": "SpeedNode DNS - 320",
             "primaryDNS": "10.202.10.202",
             "secondaryDNS": "85.15.1.15"
         },
         {
-            "name": "NetShift DNS - 321",
+            "name": "SpeedNode DNS - 321",
             "primaryDNS": "80.80.81.81",
             "secondaryDNS": "185.51.200.2"
         },
         {
-            "name": "NetShift DNS - 322",
+            "name": "SpeedNode DNS - 322",
             "primaryDNS": "80.67.169.40",
             "secondaryDNS": "204.74.101.1"
         },
         {
-            "name": "NetShift DNS - 323",
+            "name": "SpeedNode DNS - 323",
             "primaryDNS": "4.2.2.3",
             "secondaryDNS": "212.23.3.1"
         },
         {
-            "name": "NetShift DNS - 324",
+            "name": "SpeedNode DNS - 324",
             "primaryDNS": "208.67.222.222",
             "secondaryDNS": "80.67.169.40"
         },
         {
-            "name": "NetShift DNS - 325",
+            "name": "SpeedNode DNS - 325",
             "primaryDNS": "84.200.70.40",
             "secondaryDNS": "156.154.71.22"
         },
         {
-            "name": "NetShift DNS - 326",
+            "name": "SpeedNode DNS - 326",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "195.92.195.95"
         },
         {
-            "name": "NetShift DNS - 327",
+            "name": "SpeedNode DNS - 327",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 328",
+            "name": "SpeedNode DNS - 328",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "185.55.226.26"
         },
         {
-            "name": "NetShift DNS - 329",
+            "name": "SpeedNode DNS - 329",
             "primaryDNS": "80.80.80.80",
             "secondaryDNS": "178.22.122.100"
         },
         {
-            "name": "NetShift DNS - 330",
+            "name": "SpeedNode DNS - 330",
             "primaryDNS": "198.153.192.1",
             "secondaryDNS": "1.1.1.1"
         },
         {
-            "name": "NetShift DNS - 331",
+            "name": "SpeedNode DNS - 331",
             "primaryDNS": "77.88.8.8",
             "secondaryDNS": "5.202.100.101"
         },
         {
-            "name": "NetShift DNS - 332",
+            "name": "SpeedNode DNS - 332",
             "primaryDNS": "178.22.122.100",
             "secondaryDNS": "216.146.35.35"
         },
         {
-            "name": "NetShift DNS - 333",
+            "name": "SpeedNode DNS - 333",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "156.154.70.5"
         },
         {
-            "name": "NetShift DNS - 334",
+            "name": "SpeedNode DNS - 334",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "80.67.169.12"
         },
         {
-            "name": "NetShift DNS - 335",
+            "name": "SpeedNode DNS - 335",
             "primaryDNS": "195.46.39.40",
             "secondaryDNS": "129.250.35.250"
         },
         {
-            "name": "NetShift DNS - 336",
+            "name": "SpeedNode DNS - 336",
             "primaryDNS": "80.67.169.40",
             "secondaryDNS": "89.233.43.71"
         },
         {
-            "name": "NetShift DNS - 337",
+            "name": "SpeedNode DNS - 337",
             "primaryDNS": "205.171.3.65",
             "secondaryDNS": "195.92.195.95"
         },
         {
-            "name": "NetShift DNS - 338",
+            "name": "SpeedNode DNS - 338",
             "primaryDNS": "84.200.69.80",
             "secondaryDNS": "5.202.100.100"
         },
         {
-            "name": "NetShift DNS - 339",
+            "name": "SpeedNode DNS - 339",
             "primaryDNS": "204.69.234.1",
             "secondaryDNS": "8.8.8.8"
         },
         {
-            "name": "NetShift DNS - 340",
+            "name": "SpeedNode DNS - 340",
             "primaryDNS": "8.8.4.4",
             "secondaryDNS": "91.239.100.100"
         },
         {
-            "name": "NetShift DNS - 341",
+            "name": "SpeedNode DNS - 341",
             "primaryDNS": "178.22.122.100",
             "secondaryDNS": "78.157.42.100"
         },
         {
-            "name": "NetShift DNS - 342",
+            "name": "SpeedNode DNS - 342",
             "primaryDNS": "209.244.0.4",
             "secondaryDNS": "5.202.100.100"
         },
         {
-            "name": "NetShift DNS - 343",
+            "name": "SpeedNode DNS - 343",
             "primaryDNS": "89.233.43.71",
             "secondaryDNS": "129.250.35.250"
         },
         {
-            "name": "NetShift DNS - 344",
+            "name": "SpeedNode DNS - 344",
             "primaryDNS": "198.153.192.1",
             "secondaryDNS": "212.23.8.1"
         },
         {
-            "name": "NetShift DNS - 345",
+            "name": "SpeedNode DNS - 345",
             "primaryDNS": "4.2.2.2",
             "secondaryDNS": "8.20.247.20"
         },
         {
-            "name": "NetShift DNS - 346",
+            "name": "SpeedNode DNS - 346",
             "primaryDNS": "199.85.127.10",
             "secondaryDNS": "129.250.35.250"
         },
         {
-            "name": "NetShift DNS - 347",
+            "name": "SpeedNode DNS - 347",
             "primaryDNS": "9.9.9.9",
             "secondaryDNS": "205.171.3.65"
         },
         {
-            "name": "NetShift DNS - 348",
+            "name": "SpeedNode DNS - 348",
             "primaryDNS": "10.202.10.11",
             "secondaryDNS": "156.154.70.22"
         },
         {
-            "name": "NetShift DNS - 349",
+            "name": "SpeedNode DNS - 349",
             "primaryDNS": "209.244.0.3",
             "secondaryDNS": "1.1.1.1"
         },
         {
-            "name": "NetShift DNS - 350",
+            "name": "SpeedNode DNS - 350",
             "primaryDNS": "77.88.8.8",
             "secondaryDNS": "205.171.2.65"
         },
         {
-            "name": "NetShift DNS - 351",
+            "name": "SpeedNode DNS - 351",
             "primaryDNS": "129.250.35.250",
             "secondaryDNS": "85.15.1.14"
         },
         {
-            "name": "NetShift DNS - 352",
+            "name": "SpeedNode DNS - 352",
             "primaryDNS": "156.154.71.5",
             "secondaryDNS": "209.244.0.4"
         },
         {
-            "name": "NetShift DNS - 353",
+            "name": "SpeedNode DNS - 353",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "9.9.9.9"
         },
         {
-            "name": "NetShift DNS - 354",
+            "name": "SpeedNode DNS - 354",
             "primaryDNS": "199.85.127.10",
             "secondaryDNS": "156.154.70.22"
         },
         {
-            "name": "NetShift DNS - 355",
+            "name": "SpeedNode DNS - 355",
             "primaryDNS": "85.15.1.14",
             "secondaryDNS": "64.6.64.6"
         },
         {
-            "name": "NetShift DNS - 356",
+            "name": "SpeedNode DNS - 356",
             "primaryDNS": "10.202.10.202",
             "secondaryDNS": "198.153.194.1"
         },
         {
-            "name": "NetShift DNS - 357",
+            "name": "SpeedNode DNS - 357",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "209.244.0.3"
         },
         {
-            "name": "NetShift DNS - 358",
+            "name": "SpeedNode DNS - 358",
             "primaryDNS": "199.2.252.10",
             "secondaryDNS": "84.200.69.80"
         },
         {
-            "name": "NetShift DNS - 359",
+            "name": "SpeedNode DNS - 359",
             "primaryDNS": "4.2.2.3",
             "secondaryDNS": "212.23.8.1"
         },
         {
-            "name": "NetShift DNS - 360",
+            "name": "SpeedNode DNS - 360",
             "primaryDNS": "204.117.214.10",
             "secondaryDNS": "216.146.35.35"
         },
         {
-            "name": "NetShift DNS - 361",
+            "name": "SpeedNode DNS - 361",
             "primaryDNS": "1.1.1.1",
             "secondaryDNS": "9.9.9.9"
         },
         {
-            "name": "NetShift DNS - 362",
+            "name": "SpeedNode DNS - 362",
             "primaryDNS": "77.88.8.1",
             "secondaryDNS": "129.250.35.251"
         },
         {
-            "name": "NetShift DNS - 363",
+            "name": "SpeedNode DNS - 363",
             "primaryDNS": "156.154.71.22",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 364",
+            "name": "SpeedNode DNS - 364",
             "primaryDNS": "195.92.195.94",
             "secondaryDNS": "129.250.35.251"
         },
         {
-            "name": "NetShift DNS - 365",
+            "name": "SpeedNode DNS - 365",
             "primaryDNS": "80.80.80.80",
             "secondaryDNS": "64.6.65.6"
         },
         {
-            "name": "NetShift DNS - 366",
+            "name": "SpeedNode DNS - 366",
             "primaryDNS": "208.67.200.200",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 367",
+            "name": "SpeedNode DNS - 367",
             "primaryDNS": "78.157.42.100",
             "secondaryDNS": "1.1.1.1"
         },
         {
-            "name": "NetShift DNS - 368",
+            "name": "SpeedNode DNS - 368",
             "primaryDNS": "91.239.100.100",
             "secondaryDNS": "85.15.1.15"
         },
         {
-            "name": "NetShift DNS - 369",
+            "name": "SpeedNode DNS - 369",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "185.51.200.2"
         },
         {
-            "name": "NetShift DNS - 370",
+            "name": "SpeedNode DNS - 370",
             "primaryDNS": "91.239.100.100",
             "secondaryDNS": "49.112.112.112"
         },
         {
-            "name": "NetShift DNS - 371",
+            "name": "SpeedNode DNS - 371",
             "primaryDNS": "156.154.70.5",
             "secondaryDNS": "195.46.39.40"
         },
         {
-            "name": "NetShift DNS - 372",
+            "name": "SpeedNode DNS - 372",
             "primaryDNS": "4.2.2.6",
             "secondaryDNS": "74.82.42.42"
         },
         {
-            "name": "NetShift DNS - 373",
+            "name": "SpeedNode DNS - 373",
             "primaryDNS": "74.82.42.42",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 374",
+            "name": "SpeedNode DNS - 374",
             "primaryDNS": "178.22.122.100",
             "secondaryDNS": "204.117.214.10"
         },
         {
-            "name": "NetShift DNS - 375",
+            "name": "SpeedNode DNS - 375",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "156.154.71.22"
         },
         {
-            "name": "NetShift DNS - 376",
+            "name": "SpeedNode DNS - 376",
             "primaryDNS": "77.88.8.1",
             "secondaryDNS": "156.154.70.1"
         },
         {
-            "name": "NetShift DNS - 377",
+            "name": "SpeedNode DNS - 377",
             "primaryDNS": "78.157.42.101",
             "secondaryDNS": "185.55.225.25"
         },
         {
-            "name": "NetShift DNS - 378",
+            "name": "SpeedNode DNS - 378",
             "primaryDNS": "4.2.2.2",
             "secondaryDNS": "198.153.192.1"
         },
         {
-            "name": "NetShift DNS - 379",
+            "name": "SpeedNode DNS - 379",
             "primaryDNS": "8.26.56.26",
             "secondaryDNS": "64.6.65.6"
         },
         {
-            "name": "NetShift DNS - 380",
+            "name": "SpeedNode DNS - 380",
             "primaryDNS": "178.22.122.100",
             "secondaryDNS": "199.85.127.10"
         },
         {
-            "name": "NetShift DNS - 381",
+            "name": "SpeedNode DNS - 381",
             "primaryDNS": "156.154.71.5",
             "secondaryDNS": "212.23.8.1"
         },
         {
-            "name": "NetShift DNS - 382",
+            "name": "SpeedNode DNS - 382",
             "primaryDNS": "205.171.2.65",
             "secondaryDNS": "9.9.9.9"
         },
         {
-            "name": "NetShift DNS - 383",
+            "name": "SpeedNode DNS - 383",
             "primaryDNS": "80.80.81.81",
             "secondaryDNS": "178.22.122.100"
         },
         {
-            "name": "NetShift DNS - 384",
+            "name": "SpeedNode DNS - 384",
             "primaryDNS": "185.51.200.2",
             "secondaryDNS": "77.88.8.1"
         },
         {
-            "name": "NetShift DNS - 385",
+            "name": "SpeedNode DNS - 385",
             "primaryDNS": "198.153.192.1",
             "secondaryDNS": "84.200.70.40"
         },
         {
-            "name": "NetShift DNS - 386",
+            "name": "SpeedNode DNS - 386",
             "primaryDNS": "199.85.126.10",
             "secondaryDNS": "5.202.100.101"
         },
         {
-            "name": "NetShift DNS - 387",
+            "name": "SpeedNode DNS - 387",
             "primaryDNS": "49.112.112.112",
             "secondaryDNS": "156.154.70.22"
         },
         {
-            "name": "NetShift DNS - 388",
+            "name": "SpeedNode DNS - 388",
             "primaryDNS": "199.2.252.10",
             "secondaryDNS": "64.6.65.6"
         },
         {
-            "name": "NetShift DNS - 389",
+            "name": "SpeedNode DNS - 389",
             "primaryDNS": "216.146.36.36",
             "secondaryDNS": "4.2.2.6"
         },
         {
-            "name": "NetShift DNS - 390",
+            "name": "SpeedNode DNS - 390",
             "primaryDNS": "212.23.3.1",
             "secondaryDNS": "10.202.10.202"
         },
         {
-            "name": "NetShift DNS - 391",
+            "name": "SpeedNode DNS - 391",
             "primaryDNS": "156.154.71.22",
             "secondaryDNS": "4.2.2.2"
         },
         {
-            "name": "NetShift DNS - 392",
+            "name": "SpeedNode DNS - 392",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "4.2.2.6"
         },
         {
-            "name": "NetShift DNS - 393",
+            "name": "SpeedNode DNS - 393",
             "primaryDNS": "64.6.65.6",
             "secondaryDNS": "195.92.195.95"
         },
         {
-            "name": "NetShift DNS - 394",
+            "name": "SpeedNode DNS - 394",
             "primaryDNS": "84.200.70.40",
             "secondaryDNS": "156.154.71.5"
         },
         {
-            "name": "NetShift DNS - 395",
+            "name": "SpeedNode DNS - 395",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "77.88.8.8"
         },
         {
-            "name": "NetShift DNS - 396",
+            "name": "SpeedNode DNS - 396",
             "primaryDNS": "199.2.252.10",
             "secondaryDNS": "80.80.81.81"
         },
         {
-            "name": "NetShift DNS - 397",
+            "name": "SpeedNode DNS - 397",
             "primaryDNS": "204.97.212.10",
             "secondaryDNS": "5.202.100.101"
         },
         {
-            "name": "NetShift DNS - 398",
+            "name": "SpeedNode DNS - 398",
             "primaryDNS": "10.202.10.202",
             "secondaryDNS": "4.2.2.5"
         },
         {
-            "name": "NetShift DNS - 399",
+            "name": "SpeedNode DNS - 399",
             "primaryDNS": "205.171.2.65",
             "secondaryDNS": "74.82.42.42"
         },
         {
-            "name": "NetShift DNS - 400",
+            "name": "SpeedNode DNS - 400",
             "primaryDNS": "199.85.126.10",
             "secondaryDNS": "80.67.169.12"
         },
         {
-            "name": "NetShift DNS - 401",
+            "name": "SpeedNode DNS - 401",
             "primaryDNS": "185.55.225.25",
             "secondaryDNS": "185.55.226.26"
         },
         {
-            "name": "NetShift DNS - 402",
+            "name": "SpeedNode DNS - 402",
             "primaryDNS": "9.9.9.9",
             "secondaryDNS": "78.157.42.100"
         },
         {
-            "name": "NetShift DNS - 403",
+            "name": "SpeedNode DNS - 403",
             "primaryDNS": "195.92.195.95",
             "secondaryDNS": "4.2.2.1"
         },
         {
-            "name": "NetShift DNS - 404",
+            "name": "SpeedNode DNS - 404",
             "primaryDNS": "204.74.101.1",
             "secondaryDNS": "156.154.70.5"
         },
         {
-            "name": "NetShift DNS - 405",
+            "name": "SpeedNode DNS - 405",
             "primaryDNS": "4.2.2.3",
             "secondaryDNS": "80.80.81.81"
         },
         {
-            "name": "NetShift DNS - 406",
+            "name": "SpeedNode DNS - 406",
             "primaryDNS": "49.112.112.112",
             "secondaryDNS": "208.67.200.200"
         },
         {
-            "name": "NetShift DNS - 407",
+            "name": "SpeedNode DNS - 407",
             "primaryDNS": "80.80.80.80",
             "secondaryDNS": "77.88.8.8"
         },
         {
-            "name": "NetShift DNS - 408",
+            "name": "SpeedNode DNS - 408",
             "primaryDNS": "10.202.10.202",
             "secondaryDNS": "205.171.2.65"
         },
         {
-            "name": "NetShift DNS - 409",
+            "name": "SpeedNode DNS - 409",
             "primaryDNS": "64.6.65.6",
             "secondaryDNS": "80.67.169.12"
         },
         {
-            "name": "NetShift DNS - 410",
+            "name": "SpeedNode DNS - 410",
             "primaryDNS": "89.233.43.71",
             "secondaryDNS": "208.67.222.222"
         },
         {
-            "name": "NetShift DNS - 411",
+            "name": "SpeedNode DNS - 411",
             "primaryDNS": "5.202.100.101",
             "secondaryDNS": "8.26.56.26"
         },
         {
-            "name": "NetShift DNS - 412",
+            "name": "SpeedNode DNS - 412",
             "primaryDNS": "185.55.226.26",
             "secondaryDNS": "84.200.69.80"
         },
         {
-            "name": "NetShift DNS - 413",
+            "name": "SpeedNode DNS - 413",
             "primaryDNS": "10.202.10.10",
             "secondaryDNS": "80.67.169.40"
         },
         {
-            "name": "NetShift DNS - 414",
+            "name": "SpeedNode DNS - 414",
             "primaryDNS": "8.8.4.4",
             "secondaryDNS": "10.202.10.102"
         },
         {
-            "name": "NetShift DNS - 415",
+            "name": "SpeedNode DNS - 415",
             "primaryDNS": "8.20.247.20",
             "secondaryDNS": "77.88.8.8"
         },
         {
-            "name": "NetShift DNS - 416",
+            "name": "SpeedNode DNS - 416",
             "primaryDNS": "216.146.35.35",
             "secondaryDNS": "4.2.2.6"
         },
         {
-            "name": "NetShift DNS - 417",
+            "name": "SpeedNode DNS - 417",
             "primaryDNS": "156.154.71.5",
             "secondaryDNS": "178.22.122.100"
         },
         {
-            "name": "NetShift DNS - 418",
+            "name": "SpeedNode DNS - 418",
             "primaryDNS": "77.88.8.8",
             "secondaryDNS": "156.154.70.1"
         },
         {
-            "name": "NetShift DNS - 419",
+            "name": "SpeedNode DNS - 419",
             "primaryDNS": "10.202.10.11",
             "secondaryDNS": "204.74.101.1"
         }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:netshift/core/resources/media_query_size.dart';
-import 'package:netshift/core/resources/app_colors.dart';
+import 'package:speednode/core/resources/media_query_size.dart';
+import 'package:speednode/core/resources/app_colors.dart';
 
 class DNSSelection extends StatefulWidget {
   final IconData icon;

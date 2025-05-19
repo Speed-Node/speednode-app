@@ -3,20 +3,20 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/extention_sized.dart';
-import 'package:netshift/controller/single_dns_ping_controller.dart';
-import 'package:netshift/controller/sorted_dns_ping_controller.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/models/dns_model.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/widgets/app_bar.dart';
-import 'package:netshift/core/widgets/custom_snack_bar.dart';
-import 'package:netshift/core/widgets/flutter_toast.dart';
+import 'package:speednode/core/resources/extention_sized.dart';
+import 'package:speednode/controller/single_dns_ping_controller.dart';
+import 'package:speednode/controller/sorted_dns_ping_controller.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/models/dns_model.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/widgets/app_bar.dart';
+import 'package:speednode/core/widgets/custom_snack_bar.dart';
+import 'package:speednode/core/widgets/flutter_toast.dart';
 
 class DNSPing extends StatelessWidget {
   DNSPing({super.key});
 
-  final NetshiftEngineController netshiftEngineController = Get.find();
+  final SpeednodeEngineController speednodeEngineController = Get.find();
   @override
   Widget build(BuildContext context) {
     Get.lazyPut(() => SortedDnsPingController());
@@ -196,11 +196,11 @@ class DNSPing extends StatelessWidget {
                                     ),
                                     onPressed: () {
                                       if (Platform.isAndroid &&
-                                          netshiftEngineController
+                                          speednodeEngineController
                                               .isPermissionGiven.value &&
-                                          !netshiftEngineController
+                                          !speednodeEngineController
                                               .isActive.value) {
-                                        netshiftEngineController
+                                        speednodeEngineController
                                             .selectedDns.value = DnsModel(
                                           name: dnsPingController.ananas[index],
                                           primaryDNS:
@@ -208,7 +208,7 @@ class DNSPing extends StatelessWidget {
                                           secondaryDNS:
                                               dnsPingController.ananas2[index],
                                         );
-                                        netshiftEngineController
+                                        speednodeEngineController
                                             .saveSelectedDnsValue();
                                         singleDnsPingController
                                             .pingPrimaryDns();
@@ -217,7 +217,7 @@ class DNSPing extends StatelessWidget {
                                         CustomSnackBar(
                                           title: "Operation Success",
                                           message:
-                                              "${netshiftEngineController.selectedDns.value.name} Has Been Applied Successfully",
+                                              "${speednodeEngineController.selectedDns.value.name} Has Been Applied Successfully",
                                           backColor: const Color.fromARGB(
                                                   255, 50, 189, 122)
                                               .withValues(alpha: 0.9),
@@ -226,7 +226,7 @@ class DNSPing extends StatelessWidget {
                                           textColor: Colors.white,
                                         ).customSnackBar();
                                       } else if (Platform.isAndroid &&
-                                          netshiftEngineController
+                                          speednodeEngineController
                                               .isActive.value) {
                                         CustomSnackBar(
                                           title: "Operation Failed",
@@ -240,7 +240,7 @@ class DNSPing extends StatelessWidget {
                                         ).customSnackBar();
                                         return;
                                       } else if (Platform.isWindows &&
-                                          netshiftEngineController
+                                          speednodeEngineController
                                               .isActive.value) {
                                         CustomSnackBar(
                                           title: "Operation Failed",
@@ -254,9 +254,9 @@ class DNSPing extends StatelessWidget {
                                         ).customSnackBar();
                                         return;
                                       } else if (Platform.isWindows &&
-                                          !netshiftEngineController
+                                          !speednodeEngineController
                                               .isActive.value) {
-                                        netshiftEngineController
+                                        speednodeEngineController
                                             .selectedDns.value = DnsModel(
                                           name: dnsPingController.ananas[index],
                                           primaryDNS:
@@ -264,7 +264,7 @@ class DNSPing extends StatelessWidget {
                                           secondaryDNS:
                                               dnsPingController.ananas2[index],
                                         );
-                                        netshiftEngineController
+                                        speednodeEngineController
                                             .saveSelectedDnsValue();
                                         singleDnsPingController
                                             .pingPrimaryDns();
@@ -273,7 +273,7 @@ class DNSPing extends StatelessWidget {
                                         CustomSnackBar(
                                           title: "Operation Success",
                                           message:
-                                              "${netshiftEngineController.selectedDns.value.name} Has Been Applied Successfully",
+                                              "${speednodeEngineController.selectedDns.value.name} Has Been Applied Successfully",
                                           backColor: const Color.fromARGB(
                                                   255, 50, 189, 122)
                                               .withValues(alpha: 0.9),

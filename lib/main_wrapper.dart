@@ -2,12 +2,12 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/media_query_size.dart';
-import 'package:netshift/controller/main_wrapper_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/services/windows_title_bar_box.dart';
-import 'package:netshift/core/widgets/double_tap_to_exit.dart';
-import 'package:netshift/core/widgets/nav_bar.dart';
+import 'package:speednode/core/resources/media_query_size.dart';
+import 'package:speednode/controller/main_wrapper_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/services/windows_title_bar_box.dart';
+import 'package:speednode/core/widgets/double_tap_to_exit.dart';
+import 'package:speednode/core/widgets/nav_bar.dart';
 
 
 class MainWrapper extends StatelessWidget {

@@ -11,7 +11,7 @@ class WindowsLocalNotif {
     final notification = LocalNotification(
       title: title,
       identifier:
-          """NetShift_instance_checkerid:AJD93lsidOAId9238ASDL3JaedlQWEoiqwNEZLKSADjOIWEUqpoZXCMV0923asdklASDqwe9238KJHn:OP23932:SDjAIOWEQzxcLKJHqwoeiASDLKJASDoiwqZXC9238alskdjQWEoiqweZXCv098234JHKASDlkjweuqpzxc9234JHKqwoeiuASD""",
+          """SpeedNode_instance_checkerid:AJD93lsidOAId9238ASDL3JaedlQWEoiqwNEZLKSADjOIWEUqpoZXCMV0923asdklASDqwe9238KJHn:OP23932:SDjAIOWEQzxcLKJHqwoeiASDLKJASDoiwqZXC9238alskdjQWEoiqweZXCv098234JHKASDlkjweuqpzxc9234JHKqwoeiuASD""",
       body: body,
     );
     notification.show();

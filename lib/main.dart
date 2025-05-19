@@ -5,12 +5,12 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:local_notifier/local_notifier.dart';
-import 'package:netshift/binding.dart';
-import 'package:netshift/controller/system_chrome_controller.dart';
-import 'package:netshift/core/resources/media_query_size.dart';
-import 'package:netshift/controller/theme_controller.dart';
-import 'package:netshift/screens/splash_screen.dart';
-import 'package:netshift/core/services/tray_manager_service.dart';
+import 'package:speednode/binding.dart';
+import 'package:speednode/controller/system_chrome_controller.dart';
+import 'package:speednode/core/resources/media_query_size.dart';
+import 'package:speednode/controller/theme_controller.dart';
+import 'package:speednode/screens/splash_screen.dart';
+import 'package:speednode/core/services/tray_manager_service.dart';
 import 'package:window_manager/window_manager.dart';
 import 'package:windows_single_instance/windows_single_instance.dart';
 
@@ -28,7 +28,7 @@ Future<void> main(List<String> arguments) async {
       backgroundColor: Colors.transparent,
       size: Size(480, 770),
       center: true,
-      title: "NetShift",
+      title: "SpeedNode",
     );
     await windowManager.waitUntilReadyToShow(windowOptions).then((_) async {
       await windowManager.setTitleBarStyle(TitleBarStyle.hidden);
@@ -43,7 +43,7 @@ Future<void> main(List<String> arguments) async {
     );
     await initTray();
     await localNotifier.setup(
-      appName: "NetShift",
+      appName: "SpeedNode",
       shortcutPolicy: ShortcutPolicy.requireCreate,
     );
   }

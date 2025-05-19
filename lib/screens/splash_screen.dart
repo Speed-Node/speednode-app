@@ -3,21 +3,21 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/extention_sized.dart';
-import 'package:netshift/controller/check_for_update_controller.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/splash_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/services/windows_local_notif.dart';
-import 'package:netshift/core/services/windows_title_bar_box.dart';
-import 'package:netshift/core/widgets/check_for_update_widget.dart';
-import 'package:netshift/core/widgets/double_tap_to_exit.dart';
-import 'package:netshift/core/widgets/flutter_toast.dart';
+import 'package:speednode/core/resources/extention_sized.dart';
+import 'package:speednode/controller/check_for_update_controller.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/splash_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/services/windows_local_notif.dart';
+import 'package:speednode/core/services/windows_title_bar_box.dart';
+import 'package:speednode/core/widgets/check_for_update_widget.dart';
+import 'package:speednode/core/widgets/double_tap_to_exit.dart';
+import 'package:speednode/core/widgets/flutter_toast.dart';
 
 class SplashScreen extends StatelessWidget {
   SplashScreen({super.key});
 
-  final NetshiftEngineController netshiftEngineController = Get.find();
+  final SpeednodeEngineController speednodeEngineController = Get.find();
   @override
   Widget build(BuildContext context) {
     return DoubleTapToExit(
@@ -111,7 +111,7 @@ class SplashScreen extends StatelessWidget {
                       // ),
                       Center(
                         child: Text(
-                          "NetShift DNS",
+                          "SpeedNode DNS",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontFamily: 'Calistoga',
@@ -171,7 +171,7 @@ class SplashScreen extends StatelessWidget {
                     children: [
                       Center(
                         child: Text(
-                          "NetShift DNS",
+                          "SpeedNode DNS",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontFamily: 'Calistoga',
@@ -231,7 +231,7 @@ class SplashScreen extends StatelessWidget {
                     children: [
                       Center(
                         child: Text(
-                          "NetShift DNS",
+                          "SpeedNode DNS",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontFamily: 'Calistoga',
@@ -250,7 +250,7 @@ class SplashScreen extends StatelessWidget {
                             GestureDetector(
                               onTap: () {
                                 splashController.getDnsListOnline();
-                                netshiftEngineController.getIpAddress();
+                                speednodeEngineController.getIpAddress();
                               },
                               child: SizedBox(
                                 child: Row(
@@ -321,7 +321,7 @@ class SplashScreen extends StatelessWidget {
                                     } else if (Platform.isWindows) {
                                       WindowsLocalNotif(
                                               body: "Starting in Offline Mode",
-                                              title: "NetShift Service")
+                                              title: "SpeedNode Service")
                                           .showNotification();
                                     }
                                     splashController.online.remove('online');

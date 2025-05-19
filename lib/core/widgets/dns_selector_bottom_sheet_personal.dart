@@ -2,17 +2,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/extention_sized.dart';
-import 'package:netshift/core/resources/media_query_size.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/single_dns_ping_controller.dart';
-import 'package:netshift/gen/assets.gen.dart';
-import 'package:netshift/models/dns_model.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/widgets/add_dns_text_field.dart';
-import 'package:netshift/core/widgets/custom_button.dart';
-import 'package:netshift/core/widgets/delete_dns_alert_dialog.dart';
-import 'package:netshift/core/widgets/dis.dart';
+import 'package:speednode/core/resources/extention_sized.dart';
+import 'package:speednode/core/resources/media_query_size.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/single_dns_ping_controller.dart';
+import 'package:speednode/gen/assets.gen.dart';
+import 'package:speednode/models/dns_model.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/widgets/add_dns_text_field.dart';
+import 'package:speednode/core/widgets/custom_button.dart';
+import 'package:speednode/core/widgets/delete_dns_alert_dialog.dart';
+import 'package:speednode/core/widgets/dis.dart';
 
 class DNSSelectorBottomSheetPersonal extends StatelessWidget {
   DNSSelectorBottomSheetPersonal({
@@ -24,7 +24,7 @@ class DNSSelectorBottomSheetPersonal extends StatelessWidget {
 
   final TextEditingController secondaryDnsController = TextEditingController();
 
-final NetshiftEngineController netshiftEngineController = Get.find();
+final SpeednodeEngineController speednodeEngineController = Get.find();
 final SingleDnsPingController dnsPingController = Get.find();
   @override
   Widget build(BuildContext context) {
@@ -69,13 +69,13 @@ final SingleDnsPingController dnsPingController = Get.find();
                 ),
                 Expanded(
                   child: Obx(
-                    () => netshiftEngineController.dnsListPersonal.isNotEmpty
+                    () => speednodeEngineController.dnsListPersonal.isNotEmpty
                         ? ListView.builder(
                             controller: scrollController,
                             itemCount:
-                                netshiftEngineController.dnsListPersonal.length,
+                                speednodeEngineController.dnsListPersonal.length,
                             itemBuilder: (context, index) {
-                              final dns = netshiftEngineController
+                              final dns = speednodeEngineController
                                   .dnsListPersonal[index];
                               return Padding(
                                 padding: const EdgeInsets.symmetric(
@@ -84,11 +84,11 @@ final SingleDnsPingController dnsPingController = Get.find();
                                 ),
                                 child: GestureDetector(
                                   onTap: () {
-                                    netshiftEngineController.selectedDns.value =
+                                    speednodeEngineController.selectedDns.value =
                                         dns;
                                     dnsPingController.pingPrimaryDns();
                                     dnsPingController.pingSecondaryDns();
-                                    netshiftEngineController
+                                    speednodeEngineController
                                         .saveSelectedDnsValue();
                                     Navigator.pop(context);
                                   },
@@ -115,7 +115,7 @@ final SingleDnsPingController dnsPingController = Get.find();
                                             SizedBox(
                                               width: ScreenSize.width * 0.55,
                                               child: Text(
-                                                netshiftEngineController
+                                                speednodeEngineController
                                                     .dnsListPersonal[index].name,
                                                 style: TextStyle(
                                                   color: AppColors
@@ -129,7 +129,7 @@ final SingleDnsPingController dnsPingController = Get.find();
                                             ),
                                             const SizedBox(height: 4),
                                             Text(
-                                              "Primary: ${netshiftEngineController.dnsListPersonal[index].primaryDNS}",
+                                              "Primary: ${speednodeEngineController.dnsListPersonal[index].primaryDNS}",
                                               style: TextStyle(
                                                 color: AppColors
                                                     .dnsSelectorSheetPersonalDns,
@@ -137,7 +137,7 @@ final SingleDnsPingController dnsPingController = Get.find();
                                               ),
                                             ),
                                             Text(
-                                              'Secondary: ${netshiftEngineController.dnsListPersonal[index].secondaryDNS}',
+                                              'Secondary: ${speednodeEngineController.dnsListPersonal[index].secondaryDNS}',
                                               style: TextStyle(
                                                 color: AppColors
                                                     .dnsSelectorSheetPersonalDns,
@@ -168,8 +168,8 @@ final SingleDnsPingController dnsPingController = Get.find();
                                                   context: context,
                                                   builder: (context) {
                                                     return DeleteDNSAlertDialog(
-                                                      netshiftEngineController:
-                                                          netshiftEngineController,
+                                                      speednodeEngineController:
+                                                          speednodeEngineController,
                                                       dns: dns,
                                                     );
                                                   },
@@ -274,7 +274,7 @@ final SingleDnsPingController dnsPingController = Get.find();
                   CustomButton(
                     text: "Edit DNS",
                     onTap: () {
-                      netshiftEngineController.editDns(
+                      speednodeEngineController.editDns(
                         dns,
                         dnsNameController.text,
                         primaryDnsController.text,
@@ -282,7 +282,7 @@ final SingleDnsPingController dnsPingController = Get.find();
                       );
                       dnsPingController.pingPrimaryDns();
                       dnsPingController.pingSecondaryDns();
-                      netshiftEngineController.savePersonalDns();
+                      speednodeEngineController.savePersonalDns();
                       Navigator.of(context).pop();
                     },
                   )

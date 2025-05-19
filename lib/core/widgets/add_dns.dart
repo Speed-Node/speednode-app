@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/media_query_size.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/controller/single_dns_ping_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/widgets/add_dns_text_field.dart';
-import 'package:netshift/core/widgets/custom_button.dart';
+import 'package:speednode/core/resources/media_query_size.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/controller/single_dns_ping_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/widgets/add_dns_text_field.dart';
+import 'package:speednode/core/widgets/custom_button.dart';
 
 class AddDnsBottomSheet extends StatefulWidget {
   const AddDnsBottomSheet({super.key});
@@ -21,8 +21,8 @@ class _AddDnsBottomSheetState extends State<AddDnsBottomSheet> {
 
   final TextEditingController secondaryDnsController = TextEditingController();
 
-  NetshiftEngineController netshiftEngineController =
-      Get.put(NetshiftEngineController());
+  SpeednodeEngineController speednodeEngineController =
+      Get.put(SpeednodeEngineController());
   SingleDnsPingController dnsPingController = Get.put(SingleDnsPingController());
 
   @override
@@ -75,12 +75,12 @@ class _AddDnsBottomSheetState extends State<AddDnsBottomSheet> {
             CustomButton(
               text: "Add DNS",
               onTap: () {
-                netshiftEngineController.addDNS(
+                speednodeEngineController.addDNS(
                   dnsNameController.text,
                   primaryDnsController.text,
                   secondaryDnsController.text,
                 );
-                netshiftEngineController.savePersonalDns();
+                speednodeEngineController.savePersonalDns();
                 dnsPingController.pingPrimaryDns();
                 dnsPingController.pingSecondaryDns();
                 Navigator.of(context).pop();

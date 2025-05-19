@@ -1,9 +1,9 @@
 import 'package:dart_ping/dart_ping.dart';
 import 'package:get/get.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
 
 class SingleDnsPingController extends GetxController {
-final NetshiftEngineController netshiftEngineController = Get.find();
+final SpeednodeEngineController speednodeEngineController = Get.find();
   RxBool isPingP = false.obs;
   RxBool isPingS = false.obs;
   RxString resultPingP = ''.obs;
@@ -18,7 +18,7 @@ final NetshiftEngineController netshiftEngineController = Get.find();
   Future<void> pingPrimaryDns() async {
     isPingP.value = true;
     final primaryPingResult = await Ping(
-            netshiftEngineController.selectedDns.value.primaryDNS,
+            speednodeEngineController.selectedDns.value.primaryDNS,
             count: 1)
         .stream
         .first;
@@ -33,7 +33,7 @@ final NetshiftEngineController netshiftEngineController = Get.find();
   Future<void> pingSecondaryDns() async {
     isPingS.value = true;
     final secondaryPingResult = await Ping(
-            netshiftEngineController.selectedDns.value.secondaryDNS,
+            speednodeEngineController.selectedDns.value.secondaryDNS,
             count: 1)
         .stream
         .first;

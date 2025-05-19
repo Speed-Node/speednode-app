@@ -3,10 +3,10 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:netshift/controller/check_for_update_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/services/windows_title_bar_box.dart';
-import 'package:netshift/core/widgets/flutter_toast.dart';
+import 'package:speednode/controller/check_for_update_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/services/windows_title_bar_box.dart';
+import 'package:speednode/core/widgets/flutter_toast.dart';
 import 'package:window_manager/window_manager.dart';
 
 class CheckForUpdateWidget extends StatelessWidget {

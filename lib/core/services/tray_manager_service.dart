@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:netshift/gen/assets.gen.dart';
+import 'package:speednode/gen/assets.gen.dart';
 import 'package:tray_manager/tray_manager.dart';
 import 'package:window_manager/window_manager.dart';
 

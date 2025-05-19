@@ -1,33 +1,33 @@
 // import 'dart:developer';
 
 // import 'package:get/get.dart';
-// import 'package:netshift/controller/netshift_engine_controller.dart';
-// import 'package:netshift/controller/stop_watch_controller.dart';
-// import 'package:netshift/gen/assets.gen.dart';
-// import 'package:netshift/services/windows_local_notif.dart';
+// import 'package:speednode/controller/speednode_engine_controller.dart';
+// import 'package:speednode/controller/stop_watch_controller.dart';
+// import 'package:speednode/gen/assets.gen.dart';
+// import 'package:speednode/services/windows_local_notif.dart';
 // import 'package:tray_manager/tray_manager.dart';
 // import 'package:window_manager/window_manager.dart';
 
-// final NetshiftEngineController netshiftEngineController = Get.find();
+// final SpeednodeEngineController speednodeEngineController = Get.find();
 // final StopWatchController stopWatchController = Get.find();
 // Future<void> initializeTray() async {
 //   await TrayManager.instance.setIcon(Assets.png.tray);
 //   Menu menu = Menu(
 //     items: [
 //       MenuItem.checkbox(
-//         checked: netshiftEngineController.isActive.value,
+//         checked: speednodeEngineController.isActive.value,
 //         label:
-//             netshiftEngineController.isActive.value ? "Disconnect" : "Connect",
+//             speednodeEngineController.isActive.value ? "Disconnect" : "Connect",
 //         key: 'connectButton',
 //       ),
 //       MenuItem.submenu(
 //         label: "DNS List",
 //         submenu: Menu(
 //           items: [
-//             for (var item in netshiftEngineController.combinedListDns)
+//             for (var item in speednodeEngineController.combinedListDns)
 //               MenuItem.checkbox(
 //                 key: 'dnsList',
-//                 checked: netshiftEngineController.selectedDns.value == item,
+//                 checked: speednodeEngineController.selectedDns.value == item,
 //                 label: item.name,
 //               )
 //           ],
@@ -47,7 +47,7 @@
 //   await TrayManager.instance.setContextMenu(menu);
 //   TrayManager.instance.addListener(TrayManagerService());
 //   log("Tray initialized successfully.");
-//   await TrayManager.instance.setToolTip('NetShift');
+//   await TrayManager.instance.setToolTip('SpeedNode');
 // }
 
 // class TrayManagerService implements TrayListener {
@@ -71,34 +71,34 @@
 //   void onTrayMenuItemClick(MenuItem menuItem) {
 //     log("Menu item clicked: ${menuItem.key}");
 //     if (menuItem.key == 'connectButton') {
-//       if (netshiftEngineController.isActive.value) {
-//         netshiftEngineController.stopDnsForWindows();
+//       if (speednodeEngineController.isActive.value) {
+//         speednodeEngineController.stopDnsForWindows();
 //         stopWatchController.stopWatchTime();
 //         initializeTray();
 //         WindowsLocalNotif(
 //           body:
-//               "NetShift has disconnected from the ${netshiftEngineController.selectedDns.value.name}.",
+//               "SpeedNode has disconnected from the ${speednodeEngineController.selectedDns.value.name}.",
 //           title: "Service Stopped",
 //         ).showNotification();
 //       } else {
-//         netshiftEngineController.startDnsForWindows();
+//         speednodeEngineController.startDnsForWindows();
 //         stopWatchController.startWatchTime();
 //         initializeTray();
 //         WindowsLocalNotif(
 //           body:
-//               "NetShift has successfully connected to the ${netshiftEngineController.selectedDns.value.name}.",
+//               "SpeedNode has successfully connected to the ${speednodeEngineController.selectedDns.value.name}.",
 //           title: "Service Started",
 //         ).showNotification();
 //       }
-//       log("Your connection button state is : ${netshiftEngineController.isActive.value.toString()}");
+//       log("Your connection button state is : ${speednodeEngineController.isActive.value.toString()}");
 //     } else if (menuItem.key == 'dnsList') {
-//       var selectedDns = netshiftEngineController.combinedListDns
+//       var selectedDns = speednodeEngineController.combinedListDns
 //           .firstWhereOrNull((dns) => dns.name == menuItem.label);
 
 //       if (selectedDns != null) {
-//         netshiftEngineController.selectedDns.value = selectedDns;
-//         netshiftEngineController.saveSelectedDnsValue();
-//         log("Selected DNS: ${netshiftEngineController.selectedDns.value.name}");
+//         speednodeEngineController.selectedDns.value = selectedDns;
+//         speednodeEngineController.saveSelectedDnsValue();
+//         log("Selected DNS: ${speednodeEngineController.selectedDns.value.name}");
 //         initializeTray();
 //       }
 //     } else if (menuItem.key == 'show') {

@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "netshift" "\0"
+            VALUE "FileDescription", "speednode" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "netshift" "\0"
+            VALUE "InternalName", "speednode" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "netshift.exe" "\0"
-            VALUE "ProductName", "netshift" "\0"
+            VALUE "OriginalFilename", "speednode.exe" "\0"
+            VALUE "ProductName", "speednode" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

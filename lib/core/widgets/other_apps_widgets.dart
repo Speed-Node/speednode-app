@@ -1,15 +1,15 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:netshift/gen/assets.gen.dart';
-import 'package:netshift/core/resources/app_colors.dart';
+import 'package:speednode/gen/assets.gen.dart';
+import 'package:speednode/core/resources/app_colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class OtherAppsWidget extends StatelessWidget {
   const OtherAppsWidget({super.key});
 
   Future<void> _launchUrl() async {
-    final Uri url = Uri.https('github.com', '/FarzinNs83/NetShift');
+    final Uri url = Uri.https('github.com', '/FarzinNs83/SpeedNode');
     if (!await launchUrl(url)) {
       throw Exception('Could not launch $url');
     }
@@ -48,7 +48,7 @@ class OtherAppsWidget extends StatelessWidget {
                 height: 60.0,
               ),
               Text(
-                Platform.isAndroid ? "NetShift Windows" : "NetShift",
+                Platform.isAndroid ? "SpeedNode Windows" : "SpeedNode",
                 style: TextStyle(
                   fontSize: 14.0,
                   fontWeight: FontWeight.bold,

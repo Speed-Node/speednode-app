@@ -1,7 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:netshift/core/resources/app_colors.dart';
+import 'package:speednode/core/resources/app_colors.dart';
 
 class SettingsCustomCard extends StatefulWidget {
   final String title;

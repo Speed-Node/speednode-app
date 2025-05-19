@@ -1,8 +1,8 @@
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/material.dart';
-import 'package:netshift/gen/assets.gen.dart';
-import 'package:netshift/core/resources/app_colors.dart';
-import 'package:netshift/core/services/windows_local_notif.dart';
+import 'package:speednode/gen/assets.gen.dart';
+import 'package:speednode/core/resources/app_colors.dart';
+import 'package:speednode/core/services/windows_local_notif.dart';
 
 class WindowsTitleBarBox extends StatelessWidget {
   const WindowsTitleBarBox({super.key});
@@ -27,7 +27,7 @@ class WindowsTitleBarBox extends StatelessWidget {
                     ),
                     const SizedBox(width: 8),
                     const Text(
-                      'NetShift',
+                      'SpeedNode',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 11,
@@ -77,7 +77,7 @@ class CloseWindowButton extends StatelessWidget {
       onPressed: () {
         appWindow.hide();
         WindowsLocalNotif(
-                body: "NetShift is running in the background",
+                body: "SpeedNode is running in the background",
                 title: "Minimized to Tray")
             .showNotification();
       },

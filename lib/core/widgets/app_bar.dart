@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netshift/controller/theme_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
+import 'package:speednode/controller/theme_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double height;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:netshift/core/resources/extention_sized.dart';
-import 'package:netshift/controller/netshift_engine_controller.dart';
-import 'package:netshift/core/resources/app_colors.dart';
+import 'package:speednode/core/resources/extention_sized.dart';
+import 'package:speednode/controller/speednode_engine_controller.dart';
+import 'package:speednode/core/resources/app_colors.dart';
 
 class DNSStatus extends StatefulWidget {
   const DNSStatus({super.key});
@@ -12,7 +12,7 @@ class DNSStatus extends StatefulWidget {
 }
 
 class _DNSStatusState extends State<DNSStatus> {
-final NetshiftEngineController netshiftEngineController = Get.find();
+final SpeednodeEngineController speednodeEngineController = Get.find();
   bool isHovered = false;
 
   @override
@@ -42,7 +42,7 @@ final NetshiftEngineController netshiftEngineController = Get.find();
         child: Column(
           children: [
             Text(
-              "DNS: ${netshiftEngineController.selectedDns.value.name}",
+              "DNS: ${speednodeEngineController.selectedDns.value.name}",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
@@ -60,7 +60,7 @@ final NetshiftEngineController netshiftEngineController = Get.find();
             8.height,
             Obx(
               () => Text(
-                netshiftEngineController.isActive.value
+                speednodeEngineController.isActive.value
                     ? "DNS is Active"
                     : "DNS is Inactive",
                 style: TextStyle(
